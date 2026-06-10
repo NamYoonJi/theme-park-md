@@ -7,7 +7,7 @@
 <meta name="description" content="A collection of self-contained design-system specs — one markdown file per theme. AI-generated pages all look the same. These specs make them deliberate." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
     --bg: #FBFAF9;
@@ -34,12 +34,6 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-  }
-
-  .serif {
-    font-family: "Instrument Serif", Georgia, serif;
-    font-style: italic;
-    font-weight: 400;
   }
 
   a { color: inherit; }
@@ -131,14 +125,22 @@
   .hero .pill { margin-bottom: 36px; }
   .hero h1 {
     margin: 0 auto;
-    max-width: 14ch;
-    font-size: 56px;
+    font-size: 72px;
     font-weight: 500;
     line-height: 1.04;
     letter-spacing: -0.025em;
   }
-  .hero p {
+  .hero .tagline {
     margin: 28px auto 0;
+    max-width: 30ch;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+  }
+  .hero p {
+    margin: 20px auto 0;
     max-width: 52ch;
     color: var(--text-soft);
     font-size: 18px;
@@ -216,10 +218,24 @@
     transition: border-color .2s ease;
   }
   .card:hover { border-color: rgba(26, 27, 37, .28); }
+  .card .preview {
+    display: flex;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .card .chips {
+    display: flex;
+    flex-direction: column;
+    width: 14px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--hairline);
+  }
+  .card .chips span { flex: 1; }
+  .card .chips span + span { border-top: 1px solid var(--hairline); }
   .card .thumb {
+    flex: 1;
+    min-width: 0;
     aspect-ratio: 16 / 10;
     overflow: hidden;
-    border-bottom: 1px solid var(--hairline);
     background: var(--screen-tint);
   }
   .card .thumb img {
@@ -462,7 +478,8 @@
   <section class="hero">
     <div class="wrap">
       <span class="pill enter">14 THEMES · MARKDOWN ONLY</span>
-      <h1 class="enter">AI-generated pages all look the same.<br />These specs make them <em class="serif">deliberate</em>.</h1>
+      <h1 class="enter">theme-park-md</h1>
+      <p class="tagline enter">AI-generated pages all look the same.<br />These specs make them deliberate.</p>
       <p class="enter">A collection of self-contained design-system specs — one markdown file per theme. Hand them to your assistant and the output stops being generic.</p>
       <div class="cta-row enter">
         <a class="btn-primary" href="https://github.com/NamYoonJi/theme-park-md" target="_blank" rel="noopener">
@@ -478,15 +495,13 @@
   <section class="themes" id="themes">
     <div class="wrap">
       <div class="section-head enter">
-        <p class="eyebrow">The collection</p>
-        <h2>Fourteen specs. Each one is a stance.</h2>
-        <p>Every theme is a single markdown file describing tokens, type, layout, motion, and an explicit Don't list. Open any spec on GitHub.</p>
+        <h2>Previews</h2>
       </div>
 
       <div class="grid">
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#6C5CE7"></span><span style="background:#FF7AC6"></span><span style="background:#00D4FF"></span><span style="background:#0A2540"></span></div><div class="thumb"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/gradient-canvas.md" target="_blank" rel="noopener">gradient-canvas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Light, one animated gradient moment, diagonal cuts.</p>
@@ -494,7 +509,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/dark-precision.png" alt="dark-precision preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#08090A"></span><span style="background:#101113"></span><span style="background:#5E6AD2"></span><span style="background:#F7F8F8"></span></div><div class="thumb"><img src="assets/dark-precision.png" alt="dark-precision preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-precision.md" target="_blank" rel="noopener">dark-precision<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Dark-only, typographic precision, border-based depth.</p>
@@ -502,7 +517,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/mono-grid.png" alt="mono-grid preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#FFFFFF"></span><span style="background:#0070F3"></span><span style="background:#50E3C2"></span></div><div class="thumb"><img src="assets/mono-grid.png" alt="mono-grid preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-grid.md" target="_blank" rel="noopener">mono-grid<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Black/white geometry, exposed line grid, mono artifacts.</p>
@@ -510,7 +525,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/warm-workspace.png" alt="warm-workspace preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F6F3"></span><span style="background:#FBF3DB"></span><span style="background:#2383E2"></span></div><div class="thumb"><img src="assets/warm-workspace.png" alt="warm-workspace preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/warm-workspace.md" target="_blank" rel="noopener">warm-workspace<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Warm white, cards and toggles, one calm accent.</p>
@@ -518,7 +533,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#3182F6"></span><span style="background:#F2F4F6"></span><span style="background:#191F28"></span><span style="background:#F04452"></span></div><div class="thumb"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scroll-story-blue.md" target="_blank" rel="noopener">scroll-story-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Mobile-first full-screen scroll narrative, single blue.</p>
@@ -526,7 +541,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FBFAF9"></span><span style="background:#EEEDFB"></span><span style="background:#5266EB"></span><span style="background:#14151A"></span></div><div class="thumb"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/editorial-hairline.md" target="_blank" rel="noopener">editorial-hairline<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Warm off-white, hairline rules, serif-italic accents.</p>
@@ -534,7 +549,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/bold-twotone.png" alt="bold-twotone preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#CDE82A"></span><span style="background:#1C3424"></span><span style="background:#FFFFFF"></span><span style="background:#0E0F0C"></span></div><div class="thumb"><img src="assets/bold-twotone.png" alt="bold-twotone preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/bold-twotone.md" target="_blank" rel="noopener">bold-twotone<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">One deep + one bright tone, condensed display type.</p>
@@ -542,7 +557,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/quiet-paper.png" alt="quiet-paper preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFEF2"></span><span style="background:#F6F5E8"></span><span style="background:#D8D7CC"></span><span style="background:#252525"></span></div><div class="thumb"><img src="assets/quiet-paper.png" alt="quiet-paper preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/quiet-paper.md" target="_blank" rel="noopener">quiet-paper<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Paper tones, long-form copy, radius 0, zero urgency.</p>
@@ -550,7 +565,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/spec-minimal.png" alt="spec-minimal preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F5F5F5"></span><span style="background:#FF7500"></span><span style="background:#101820"></span></div><div class="thumb"><img src="assets/spec-minimal.png" alt="spec-minimal preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/spec-minimal.md" target="_blank" rel="noopener">spec-minimal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Monochrome, oversized spec numerals, uppercase labels.</p>
@@ -558,7 +573,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#ECECEC"></span><span style="background:#8E8E8E"></span><span style="background:#000000"></span></div><div class="thumb"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-editorial-shop.md" target="_blank" rel="noopener">mono-editorial-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">B/W editorial commerce, mixed Latin/Korean type.</p>
@@ -566,7 +581,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/midnight.png" alt="midnight preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#04070E"></span><span style="background:#0D1525"></span><span style="background:#9DC8FF"></span><span style="background:#CAEEFF"></span></div><div class="thumb"><img src="assets/midnight.png" alt="midnight preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/midnight.md" target="_blank" rel="noopener">midnight<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Dark navy engineering UI, single ice-blue accent, border depth.</p>
@@ -574,7 +589,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/phosphor.png" alt="phosphor preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#004D15"></span><span style="background:#00AA2B"></span><span style="background:#00FF41"></span></div><div class="thumb"><img src="assets/phosphor.png" alt="phosphor preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/phosphor.md" target="_blank" rel="noopener">phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Green CRT terminal, bitmap type, working TTY.</p>
@@ -582,7 +597,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#08000F"></span><span style="background:#3C096C"></span><span style="background:#9D4EDD"></span><span style="background:#C77DFF"></span></div><div class="thumb"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/violet-phosphor.md" target="_blank" rel="noopener">violet-phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Violet CRT terminal variant, live monitor and shell.</p>
@@ -590,7 +605,7 @@
         </article>
 
         <article class="card enter">
-          <div class="thumb"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" loading="lazy" /></div>
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#101013"></span><span style="background:#7C3AED"></span><span style="background:#EC4899"></span><span style="background:#3B82F6"></span></div><div class="thumb"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/grainy-blur.md" target="_blank" rel="noopener">grainy-blur<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Dark charcoal canvas, blurred color light-curtains, heavy film grain.</p>
@@ -606,7 +621,7 @@
     <div class="wrap">
       <div class="section-head enter">
         <p class="eyebrow">Before / After</p>
-        <h2>The same prompt, made <em class="serif">specific</em>.</h2>
+        <h2>The same prompt, made specific.</h2>
         <p>Left: a generic AI default. Right: two pages built from one spec — same source, deliberate result.</p>
       </div>
 
