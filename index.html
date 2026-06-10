@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>theme-park.md — deliberate design-system specs</title>
+<meta name="description" content="A collection of self-contained design-system specs — one markdown file per theme. AI-generated pages all look the same. These specs make them deliberate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #FBFAF9;
+    --bg-deep: #14151A;
+    --text: #1A1B25;
+    --text-soft: #70707B;
+    --accent: #5266EB;
+    --hairline: rgba(26, 27, 37, .12);
+    --hairline-on-dark: rgba(255, 255, 255, .14);
+    --screen-tint: #EEEDFB;
+    --max: 1140px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .serif {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  a { color: inherit; }
+
+  img { display: block; max-width: 100%; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- enter animation: opacity only ---------- */
+  .enter {
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+  .enter.is-in { opacity: 1; }
+  /* hero is visible on load — no scroll gating */
+  .hero .enter { opacity: 1; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .enter { opacity: 1 !important; transition: none; }
+    * { scroll-behavior: auto !important; }
+  }
+
+  /* ---------- badge / pill ---------- */
+  .pill {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 8px 12px;
+  }
+
+  /* ---------- nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(251, 250, 249, .82);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .wordmark {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .nav-links a {
+    font-size: 14px;
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--text) !important;
+    font-weight: 500;
+  }
+  .nav-cta svg { width: 16px; height: 16px; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    padding: 132px 0 96px;
+    border-bottom: 1px solid var(--hairline);
+    text-align: center;
+  }
+  .hero .pill { margin-bottom: 36px; }
+  .hero h1 {
+    margin: 0 auto;
+    max-width: 14ch;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+  }
+  .hero p {
+    margin: 28px auto 0;
+    max-width: 52ch;
+    color: var(--text-soft);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .cta-row {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    height: 44px;
+    padding: 0 20px;
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity .2s ease;
+  }
+  .btn-primary:hover { opacity: .9; }
+  .btn-primary svg { width: 17px; height: 17px; }
+  .btn-text {
+    font-size: 14px;
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    transition: color .2s ease;
+  }
+  .btn-text:hover { color: var(--accent); }
+
+  /* ---------- section scaffolding ---------- */
+  section { padding: 112px 0; }
+  .section-head { max-width: 60ch; }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  .section-head h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+  }
+  .section-head p {
+    margin: 14px 0 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+
+  /* ---------- themes gallery ---------- */
+  .themes { border-top: 1px solid var(--hairline); }
+  .grid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .card {
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg);
+    transition: border-color .2s ease;
+  }
+  .card:hover { border-color: rgba(26, 27, 37, .28); }
+  .card .thumb {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-bottom: 1px solid var(--hairline);
+    background: var(--screen-tint);
+  }
+  .card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .body { padding: 18px 18px 20px; }
+  .card h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color .2s ease;
+  }
+  .card h3 a:hover { color: var(--accent); }
+  .card h3 a svg {
+    width: 13px; height: 13px;
+    color: var(--text-soft);
+    transition: color .2s ease;
+  }
+  .card h3 a:hover svg { color: var(--accent); }
+  .card .desc {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-soft);
+  }
+
+  /* ---------- before/after ---------- */
+  .ba { border-top: 1px solid var(--hairline); }
+  .ba-grid { margin-top: 48px; }
+  .ba-full {
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .ba-full img { width: 100%; }
+  .ba-cap {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin: 14px 0 40px;
+    text-align: center;
+  }
+  table.ba-pair {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table.ba-pair td {
+    padding: 0;
+    vertical-align: top;
+  }
+  table.ba-pair td:first-child { padding-right: 12px; }
+  table.ba-pair td:last-child { padding-left: 12px; }
+  table.ba-pair .frame {
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  table.ba-pair .frame img { width: 100%; }
+
+  /* ---------- usage ---------- */
+  .usage { border-top: 1px solid var(--hairline); }
+  .usage-steps {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  ol.steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 22px 38px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 22px;
+  }
+  ol.steps li:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--text-soft);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    line-height: 1;
+  }
+  ol.steps li h4 {
+    margin: 1px 0 4px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  ol.steps li p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.55;
+  }
+  ol.steps code {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    background: rgba(26, 27, 37, .045);
+    border: 1px solid var(--hairline);
+    border-radius: 5px;
+    padding: 1px 6px;
+  }
+  .prompt-quote {
+    border: 1px solid var(--hairline);
+    border-left: 2px solid var(--text);
+    border-radius: 0 12px 12px 0;
+    padding: 26px 28px;
+    background: var(--bg);
+  }
+  .prompt-quote .lbl {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin: 0 0 14px;
+  }
+  .prompt-quote blockquote {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .prompt-quote code {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  /* ---------- footer (dark section) ---------- */
+  footer {
+    background: var(--bg-deep);
+    color: #E7E7EA;
+    border-top: 1px solid var(--hairline);
+  }
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 56px 0;
+    flex-wrap: wrap;
+  }
+  .footer-inner .fw {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-inner .note {
+    font-size: 13px;
+    color: rgba(231, 231, 234, .6);
+    margin: 8px 0 0;
+  }
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #E7E7EA;
+    text-decoration: none;
+    border: 1px solid var(--hairline-on-dark);
+    border-radius: 8px;
+    padding: 10px 16px;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .footer-link:hover { border-color: rgba(255, 255, 255, .4); color: #fff; }
+  .footer-link svg { width: 16px; height: 16px; }
+
+  /* ---------- focus ---------- */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 920px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .usage-steps { grid-template-columns: 1fr; gap: 36px; }
+  }
+  @media (max-width: 720px) {
+    .wrap { padding: 0 20px; }
+    .nav-links { gap: 18px; }
+    .nav-links .hide-sm { display: none; }
+    .hero { padding: 84px 0 64px; }
+    .hero h1 { font-size: 38px; max-width: 100%; }
+    .hero p { font-size: 16px; }
+    section { padding: 72px 0; }
+    .section-head h2 { font-size: 26px; }
+    .grid { grid-template-columns: 1fr; }
+    .cta-row { gap: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="#top">theme-park.md</a>
+    <nav class="nav-links">
+      <a href="#themes">Themes</a>
+      <a href="#before-after" class="hide-sm">Before/After</a>
+      <a href="#usage">Usage</a>
+      <a class="nav-cta" href="https://github.com/NamYoonJi/theme-park-md" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill enter">14 THEMES · MARKDOWN ONLY</span>
+      <h1 class="enter">AI-generated pages all look the same.<br />These specs make them <em class="serif">deliberate</em>.</h1>
+      <p class="enter">A collection of self-contained design-system specs — one markdown file per theme. Hand them to your assistant and the output stops being generic.</p>
+      <div class="cta-row enter">
+        <a class="btn-primary" href="https://github.com/NamYoonJi/theme-park-md" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View on GitHub
+        </a>
+        <a class="btn-text" href="#themes">Browse the themes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THEMES ============ -->
+  <section class="themes" id="themes">
+    <div class="wrap">
+      <div class="section-head enter">
+        <p class="eyebrow">The collection</p>
+        <h2>Fourteen specs. Each one is a stance.</h2>
+        <p>Every theme is a single markdown file describing tokens, type, layout, motion, and an explicit Don't list. Open any spec on GitHub.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/gradient-canvas.md" target="_blank" rel="noopener">gradient-canvas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Light, one animated gradient moment, diagonal cuts.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/dark-precision.png" alt="dark-precision preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-precision.md" target="_blank" rel="noopener">dark-precision<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Dark-only, typographic precision, border-based depth.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/mono-grid.png" alt="mono-grid preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-grid.md" target="_blank" rel="noopener">mono-grid<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Black/white geometry, exposed line grid, mono artifacts.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/warm-workspace.png" alt="warm-workspace preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/warm-workspace.md" target="_blank" rel="noopener">warm-workspace<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Warm white, cards and toggles, one calm accent.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scroll-story-blue.md" target="_blank" rel="noopener">scroll-story-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Mobile-first full-screen scroll narrative, single blue.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/editorial-hairline.md" target="_blank" rel="noopener">editorial-hairline<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Warm off-white, hairline rules, serif-italic accents.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/bold-twotone.png" alt="bold-twotone preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/bold-twotone.md" target="_blank" rel="noopener">bold-twotone<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">One deep + one bright tone, condensed display type.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/quiet-paper.png" alt="quiet-paper preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/quiet-paper.md" target="_blank" rel="noopener">quiet-paper<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Paper tones, long-form copy, radius 0, zero urgency.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/spec-minimal.png" alt="spec-minimal preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/spec-minimal.md" target="_blank" rel="noopener">spec-minimal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Monochrome, oversized spec numerals, uppercase labels.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-editorial-shop.md" target="_blank" rel="noopener">mono-editorial-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">B/W editorial commerce, mixed Latin/Korean type.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/midnight.png" alt="midnight preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/midnight.md" target="_blank" rel="noopener">midnight<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Dark navy engineering UI, single ice-blue accent, border depth.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/phosphor.png" alt="phosphor preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/phosphor.md" target="_blank" rel="noopener">phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Green CRT terminal, bitmap type, working TTY.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/violet-phosphor.md" target="_blank" rel="noopener">violet-phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Violet CRT terminal variant, live monitor and shell.</p>
+          </div>
+        </article>
+
+        <article class="card enter">
+          <div class="thumb"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" loading="lazy" /></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/grainy-blur.md" target="_blank" rel="noopener">grainy-blur<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Dark charcoal canvas, blurred color light-curtains, heavy film grain.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE / AFTER ============ -->
+  <section class="ba" id="before-after">
+    <div class="wrap">
+      <div class="section-head enter">
+        <p class="eyebrow">Before / After</p>
+        <h2>The same prompt, made <em class="serif">specific</em>.</h2>
+        <p>Left: a generic AI default. Right: two pages built from one spec — same source, deliberate result.</p>
+      </div>
+
+      <div class="ba-grid">
+        <div class="ba-full enter">
+          <img src="assets/before.webp" alt="A generic AI-generated landing page before applying a spec" loading="lazy" />
+        </div>
+        <p class="ba-cap enter">Before — the default everyone ships.</p>
+
+        <table class="ba-pair enter">
+          <tr>
+            <td style="width:59%">
+              <div class="frame"><img src="assets/grainy-blur1.png" alt="grainy-blur theme result, primary view" loading="lazy" /></div>
+            </td>
+            <td style="width:41%">
+              <div class="frame"><img src="assets/grainy-blur2.png" alt="grainy-blur theme result, secondary view" loading="lazy" /></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USAGE ============ -->
+  <section class="usage" id="usage">
+    <div class="wrap">
+      <div class="section-head enter">
+        <p class="eyebrow">Usage</p>
+        <h2>Two steps to a deliberate page.</h2>
+      </div>
+
+      <div class="usage-steps">
+        <ol class="steps enter">
+          <li>
+            <h4>Clone the repo</h4>
+            <p>Pull the collection so the specs sit beside your project: <code>git clone https://github.com/NamYoonJi/theme-park-md</code></p>
+          </li>
+          <li>
+            <h4>Point your assistant at a spec</h4>
+            <p>Reference one file and tell it to follow the spec exactly — including the Don't section. That single instruction does the work.</p>
+          </li>
+        </ol>
+
+        <div class="prompt-quote enter">
+          <p class="lbl">Tell your assistant</p>
+          <blockquote>
+            <code>Build the page as a single HTML file. Follow ~/theme-park.md/themes/dark-precision.md exactly, including the Don't section.</code>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <a class="fw" href="#top">theme-park.md</a>
+      <p class="note">Independent design-pattern study. Docs CC BY 4.0 · Code samples MIT.</p>
+    </div>
+    <a class="footer-link" href="https://github.com/NamYoonJi/theme-park-md" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      View repository
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var items = Array.prototype.slice.call(document.querySelectorAll(".enter"));
+    if (reduce || !("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("is-in"); });
+      return;
+    }
+    // hero items are already visible via CSS; reveal them immediately too
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
