@@ -4,7 +4,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/themes-10-5E6AD2?style=flat-square" alt="10 themes">
   <img src="https://img.shields.io/badge/format-markdown_only-101820?style=flat-square" alt="markdown only">
-  <img src="https://img.shields.io/badge/emojis-0-F04452?style=flat-square" alt="zero emojis">
   <img src="https://img.shields.io/badge/docs-CC_BY_4.0-2383E2?style=flat-square" alt="CC BY 4.0">
 </p>
 theme-park.md
