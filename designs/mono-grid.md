@@ -2,8 +2,7 @@
 
 > Theme: black-and-white geometric system with exposed line grids, monospace artifacts, and documentation-grade density.
 > Use case: developer tool / infrastructure marketing + docs.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC) or any MIT-licensed line set, stroke 1.5px. No platform emoji.
+> Icons: Lucide (ISC) or any MIT-licensed line set, stroke 1.5px. No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 

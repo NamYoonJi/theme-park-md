@@ -2,8 +2,7 @@
 
 > Theme: dark-only interface with typographic precision, border-based depth, and speed as the core brand value.
 > Use case: productivity / developer tool landing.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee. Fictional product: "CatTower Issues".
-> Icons: Lucide (ISC), stroke 1.5px, 16-20px. No platform emoji.
+> Icons: Lucide (ISC), stroke 1.5px, 16-20px. No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -67,7 +66,7 @@ Scale: 13 / 15 / 21 / 32 / 56 — few steps; hierarchy completed by `--text-1..3
 
 ## 7. Don't
 
-- No third-party app screenshots — build mockups of the fictional product only
+- No third-party app screenshots; build original UI mockups only
 - Never more than one accent color
 - No box-shadows (border-based depth only)
 - No light-mode variant (this system is dark-only)

@@ -3,8 +3,7 @@
 > Theme: light, trustworthy SaaS landing with one animated gradient moment and diagonal section cuts.
 > Use case: B2B product landing with a technical audience.
 > Note: accent hue is deliberately offset from a brand-identifying color in the same hue family — keep as specified.
-> Dummy content: CatTower LTD / Kitty Park (CEO), Ya-ong Kim (CTO), Calico Lee (Head of Design).
-> Icons: Lucide (ISC), stroke 1.5px. No platform emoji.
+> Icons: Lucide (ISC), stroke 1.5px. No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -53,7 +52,7 @@ Scale: 13 / 15 / 18 / 24 / 36 / 56 / 72
 | CTA secondary | Text + `arrow-right`, no border |
 | Code block | Dark card, language tabs, radius 8px, shadow 0 24px 48px rgba(0,0,0,.12) |
 | Nav | Transparent at top -> white + blur on scroll, height 64px |
-| Logo strip | Six client names in one row, grayscale 60% — fictional names only |
+| Logo strip | Six client names in one row, grayscale 60% |
 | Stat | 36px weight-600 number + 13px label |
 
 ## 6. Motion
@@ -70,4 +69,3 @@ Scale: 13 / 15 / 18 / 24 / 36 / 56 / 72
 - No third-party logos, illustrations, or copy text
 - Do not swap the accent toward neighboring brand-identifying hues; keep the specified value
 - Max one gradient instance per page
-- No real company names anywhere — fictional entities (CatTower LTD, etc.) only

@@ -2,15 +2,14 @@
 
 > Theme: warm-white, friendly workspace aesthetic — modular cards, toggles, and a single calm accent.
 > Use case: productivity / collaboration tool landing + template gallery.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC), stroke 1.75px. No platform emoji; decorative spots use 24px line-style SVG.
+> Icons: Lucide (ISC), stroke 1.75px. No platform/mobile emoji — use SVG icons instead; decorative spots use 24px line-style SVG.
 
 ## 1. Principles
 
 | # | Principle | Implementation |
 |---|---|---|
 | 1 | Friendly tooling | White background, near-black text, rounded corners, warm copy tone |
-| 2 | Product UI as illustration | Simplified product screens (fictional data) serve as the visuals |
+| 2 | Product UI as illustration | Simplified product screens serve as the visuals |
 | 3 | Monochrome + one accent | Achromatic body; single accent reserved for CTA/links |
 | 4 | Template-like structure | Content modularized into cards, galleries, toggles |
 
@@ -53,7 +52,7 @@ Scale: 12 / 14 / 16 / 20 / 28 / 40 / 52
 | Callout | `--callout` bg, radius 8px, left spot icon |
 | Toggle list | `chevron-right` rotates 90deg, 0.2s |
 | Sidebar mock | 14px rows, hover `--bg-soft`, 12px indent steps |
-| Testimonial | 32px circular avatar (fictional initials) + name + title |
+| Testimonial | 32px circular avatar (initials) + name + title |
 
 ## 6. Motion
 
@@ -65,8 +64,6 @@ Scale: 12 / 14 / 16 / 20 / 28 / 40 / 52
 
 ## 7. Content Rules
 
-- Testimonials use fictional people only: "Kitty Park, CEO of CatTower LTD"
-- Data inside product screens is fictional
 - Copy tone: second person, active voice, outcomes over features
 
 ## 8. Don't

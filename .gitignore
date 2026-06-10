@@ -1,0 +1,9 @@
+# Local example pages — generated previews live in assets/, the HTML is not published
+examples/
+
+# Claude Code local files
+.claude/
+
+# Demo webpage creation guideliens 
+
+DEMO_GUIDELINES.md

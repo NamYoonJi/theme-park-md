@@ -2,8 +2,7 @@
 
 > Theme: monochrome product minimalism — full-bleed media, oversized spec numerals, uppercase wayfinding, one signal accent.
 > Use case: premium hardware / physical product page.
-> Dummy content: CatTower LTD product "CT-1" / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC), stroke 1.5px. No platform emoji.
+> Icons: Lucide (ISC), stroke 1.5px. No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -69,4 +68,3 @@ Scale: 12 / 14 / 16 / 24 / 40 / 56 / 72
 - No emblem-like geometric marks that could read as an existing logo
 - `--signal` accent never exceeds 2 instances per page
 - No rounded corners, no shadows
-- Metrics must be plausible but fictional — never real product data presented as fact

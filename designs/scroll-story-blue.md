@@ -2,8 +2,7 @@
 
 > Theme: mobile-first, full-screen scroll storytelling with plain language and a single blue accent.
 > Use case: Korean-language consumer app landing.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee. Fictional service names only.
-> Icons: Lucide (ISC), stroke 1.5px. No platform emoji; no 3D icon styles — line SVG only.
+> Icons: Lucide (ISC), stroke 1.5px. No platform/mobile emoji — use SVG icons instead; no 3D icon styles, line SVG only.
 
 ## 1. Principles
 
@@ -69,6 +68,5 @@ Numeric format: `1,234,567` with unit attached — never split the unit from the
 ## 7. Don't
 
 - No 3D graphics, characters, or illustration styles borrowed from existing products
-- No real organization names inside mockups — fictional names only
 - No jargon in headlines (use everyday equivalents)
 - Never scale the mobile layout up on desktop — mockups keep fixed width

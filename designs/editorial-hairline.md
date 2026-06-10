@@ -2,8 +2,7 @@
 
 > Theme: warm off-white editorial minimalism — hairline rules, serif-italic accents, static poise.
 > Use case: B2B product with a premium, trust-led tone.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC), stroke 1.25px (thin). No platform emoji.
+> Icons: Lucide (ISC), stroke 1.25px (thin). No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -51,9 +50,9 @@ Mixing rule: `Precision in <em class="serif">motion</em>` — max 3 instances pe
 |---|---|
 | CTA primary | Near-black `--text` bg, white text, radius 8px, height 44px |
 | CTA text | 1px underline, 4px offset; hover -> `--accent` |
-| Dashboard mock | Radius 12px, hairline border, fictional data only |
+| Dashboard mock | Radius 12px, hairline border |
 | Table | Hairline rows; labels left + tabular numbers right |
-| Quote | Serif italic 28px + fictional attribution at 13px |
+| Quote | Serif italic 28px + attribution at 13px |
 | Badge | Uppercase 11px, letter-spacing 0.08em, hairline-border pill |
 
 ## 6. Motion
@@ -68,4 +67,3 @@ Mixing rule: `Precision in <em class="serif">motion</em>` — max 3 instances pe
 
 - No shadows, glows, or gradients (preserve the hairline system)
 - Never exceed 3 serif-mix instances
-- No real institution or authority names — fictional notation only

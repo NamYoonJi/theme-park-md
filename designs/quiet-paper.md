@@ -2,8 +2,7 @@
 
 > Theme: paper-toned quiet luxury — long-form copy, hairline rules, zero urgency, rectilinear geometry.
 > Use case: premium product commerce with an editorial voice.
-> Dummy content: CatTower LTD product line / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC), stroke 1px (hairline). No platform emoji.
+> Icons: Lucide (ISC), stroke 1px (hairline). No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 

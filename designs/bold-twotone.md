@@ -3,8 +3,7 @@
 > Theme: loud two-tone system — one deep tone, one bright tone, condensed display type, concrete numbers.
 > Use case: consumer service landing with a confident brand voice.
 > Note: the two tones are deliberately offset from a brand-identifying color pair in the same families — keep as specified.
-> Dummy content: CatTower LTD / Kitty Park, Ya-ong Kim, Calico Lee.
-> Icons: Lucide (ISC), stroke 2px (bold to match display weight). No platform emoji.
+> Icons: Lucide (ISC), stroke 2px (bold to match display weight). No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -51,7 +50,7 @@ Scale: 13 / 15 / 17 / 24 / 40 / 64 / 96
 | CTA primary | `--bright` bg + `--deep` text, pill radius, height 52px, weight 700 |
 | Estimator card | White card, radius 16px, two inputs + live computed row (tabular) |
 | Value row | Label left + tabular number right, `--border` divider |
-| Comparison table | Fictional alternatives ("Option A", "Provider B") vs the fictional brand; checkmarks via Lucide `check` |
+| Comparison table | Alternatives ("Option A", "Provider B") vs the brand; checkmarks via Lucide `check` |
 | Stat band | `--deep` bg, `--bright` oversized numbers |
 | Footer | `--deep` bg, white text, 4-column |
 
@@ -67,6 +66,6 @@ Scale: 13 / 15 / 17 / 24 / 40 / 64 / 96
 ## 7. Don't
 
 - Do not shift the two tones toward neighboring brand-identifying pairs; keep the specified values
-- No unverifiable claims; all figures labeled fictional in demos
+- No unverifiable claims
 - No national flag icons for locale/currency — use ISO codes (USD, EUR, KRW)
 - Display face never used below 40px (condensed weight breaks at small sizes)

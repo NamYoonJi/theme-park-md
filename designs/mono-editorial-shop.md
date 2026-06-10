@@ -2,8 +2,7 @@
 
 > Theme: black-and-white editorial commerce — magazine-style front, curated grids, mixed Latin/Korean typography.
 > Use case: curation-led shop with story-driven merchandising.
-> Dummy content: CatTower LTD select shop / Kitty Park, Ya-ong Kim, Calico Lee. Fictional brands and products only.
-> Icons: Lucide (ISC), stroke 1.5px. No platform emoji.
+> Icons: Lucide (ISC), stroke 1.5px. No platform/mobile emoji — use SVG icons instead.
 
 ## 1. Principles
 
@@ -68,5 +67,3 @@ Scale: 12 / 13 / 15 / 18 / 24 / 36 / 48 / 64
 
 - No accent or sale-red color (monochrome discipline)
 - No filters or treatments on product imagery
-- All editorial copy self-written for fictional products only
-- No real brand names in tiles — fictional labels only
