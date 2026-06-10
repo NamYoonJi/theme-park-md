@@ -1,4 +1,4 @@
-# design_mono-editorial-shop.md
+# mono-editorial-shop.md
 
 > Theme: black-and-white editorial commerce — magazine-style front, curated grids, mixed Latin/Korean typography.
 > Use case: curation-led shop with story-driven merchandising.

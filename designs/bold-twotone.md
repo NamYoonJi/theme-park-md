@@ -1,4 +1,4 @@
-# design_bold-twotone.md
+# bold-twotone.md
 
 > Theme: loud two-tone system — one deep tone, one bright tone, condensed display type, concrete numbers.
 > Use case: consumer service landing with a confident brand voice.

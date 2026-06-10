@@ -1,4 +1,4 @@
-# design_warm-workspace.md
+# warm-workspace.md
 
 > Theme: warm-white, friendly workspace aesthetic — modular cards, toggles, and a single calm accent.
 > Use case: productivity / collaboration tool landing + template gallery.

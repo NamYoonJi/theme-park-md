@@ -1,4 +1,4 @@
-# design_spec-minimal.md
+# spec-minimal.md
 
 > Theme: monochrome product minimalism — full-bleed media, oversized spec numerals, uppercase wayfinding, one signal accent.
 > Use case: premium hardware / physical product page.

@@ -1,4 +1,4 @@
-# design_scroll-story-blue.md
+# scroll-story-blue.md
 
 > Theme: mobile-first, full-screen scroll storytelling with plain language and a single blue accent.
 > Use case: Korean-language consumer app landing.

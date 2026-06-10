@@ -1,4 +1,4 @@
-# design_dark-precision.md
+# dark-precision.md
 
 > Theme: dark-only interface with typographic precision, border-based depth, and speed as the core brand value.
 > Use case: productivity / developer tool landing.

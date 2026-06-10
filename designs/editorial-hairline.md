@@ -1,4 +1,4 @@
-# design_editorial-hairline.md
+# editorial-hairline.md
 
 > Theme: warm off-white editorial minimalism — hairline rules, serif-italic accents, static poise.
 > Use case: B2B product with a premium, trust-led tone.

@@ -1,4 +1,4 @@
-# design_mono-grid.md
+# mono-grid.md
 
 > Theme: black-and-white geometric system with exposed line grids, monospace artifacts, and documentation-grade density.
 > Use case: developer tool / infrastructure marketing + docs.

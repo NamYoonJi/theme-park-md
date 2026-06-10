@@ -1,4 +1,4 @@
-# design_gradient-canvas.md
+# gradient-canvas.md
 
 > Theme: light, trustworthy SaaS landing with one animated gradient moment and diagonal section cuts.
 > Use case: B2B product landing with a technical audience.

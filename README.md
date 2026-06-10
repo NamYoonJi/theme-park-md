@@ -13,6 +13,20 @@ AI-generated pages are ugly and all look the same. These specs fix that: deliber
 
 Each `design_*.md` is a self-contained spec: color tokens, typography, layout, components, motion, and a Don't list.
 
+## Before / After
+
+Same content, restyled with a theme — a plain page becomes a deliberate one.
+
+You can turn this
+<p align="center"><img src="assets/before.webp" alt="before" width="50%"></p>
+into this
+<table>
+<tr>
+<td width="59%"><img src="assets/grainy-blur1.png" alt="grainy-blur1" width="100%"></td>
+<td width="41%"><img src="assets/grainy-blur2.png" alt="grainy-blur2" width="100%"></td>
+</tr>
+</table>
+
 ## Themes
 
 | Theme | Visual character |
@@ -62,7 +76,7 @@ Each theme below was built into a single self-contained HTML page from its spec 
 </tr>
 <tr>
 <td><img src="assets/violet-phosphor.png" alt="violet-phosphor preview"><br><sub><a href="designs/violet-phosphor.md">designs/violet-phosphor.md</a></sub></td>
-<td width="50%"></td>
+<td><img src="assets/grainy-blur1.png" alt="grainy-blur preview"><br><sub><a href="designs/grainy-blur.md">designs/grainy-blur.md</a></sub></td>
 </tr>
 </table>
 

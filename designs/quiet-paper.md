@@ -1,4 +1,4 @@
-# design_quiet-paper.md
+# quiet-paper.md
 
 > Theme: paper-toned quiet luxury — long-form copy, hairline rules, zero urgency, rectilinear geometry.
 > Use case: premium product commerce with an editorial voice.
