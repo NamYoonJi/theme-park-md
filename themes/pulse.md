@@ -100,3 +100,25 @@ Status: good `#009E73`, watch `#E69F00`, alert `#D55E00`.
 - No second accent hue; series colors never leak into chrome
 - Status never color-alone (dot + text)
 - No shadows in dark theme; no borders thicker than 1px
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#F2F4F6; --bg-panel:#FFFFFF; --line:#E5E8EB;
+  --text:#191F28; --text-dim:#6B7684; --accent:#3182F6; --accent-soft:#E8F3FF;
+  --s1:#0072B2; --s2:#E69F00; --s3:#009E73; --s4:#D55E00; --s5:#CC79A7; --s6:#56B4E9;
+  --good:#009E73; --watch:#E69F00; --alert:#D55E00;
+  --radius-card:20px; --space-unit:16px;
+  --font-sans:"Figtree",system-ui,sans-serif;
+}
+[data-theme="dark"]{
+  --bg:#101418; --bg-panel:#1B2026; --line:#2A3138;
+  --text:#ECEFF1; --text-dim:#8B95A1; --accent:#4593FC; --accent-soft:#1B3A5C;
+}
+```

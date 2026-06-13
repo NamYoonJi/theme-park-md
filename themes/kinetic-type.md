@@ -77,3 +77,19 @@ Display variants: outlined type (`-webkit-text-stroke: 1px`, transparent fill) f
 - Skew/parallax are scroll-linked only; nothing loops or autoplays
 - Don't combine outlined and accent-colored type in the same line
 - Mobile (<768px): kill skew and horizontal slides; keep mask reveals only
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --ink:#000000; --bg-dark:#1D1F23;
+  --accent-block:#4338E3; --accent-warm:#E04A2B; --soft:rgba(0,0,0,.55);
+  --radius:0;
+  --font-display:"Space Grotesk",sans-serif; --font-serif:"Instrument Serif",serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

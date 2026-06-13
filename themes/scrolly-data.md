@@ -89,3 +89,21 @@ Root duration variable: `--1s: 1ms;` overridden to `1s` only under `prefers-redu
 - No legend when direct labeling fits; never more than 7 series
 - Body text never in sans; UI text never in serif
 - No parallax or text movement during scrolly — only the graphic animates
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --bg-warm:#F7F4ED; --text:#242424; --text-soft:#6B6B6B;
+  --border:#D9D6CE; --accent:#1E7F3C; --mark:#F2DD4E; --button-bg:#242424;
+  /* colorblind-safe categorical series (fixed order) */
+  --s1:#4477AA; --s2:#EE6677; --s3:#228833; --s4:#CCBB44; --s5:#66CCEE; --s6:#AA3377; --s7:#BBBBBB;
+  --radius-xs:2px; --radius-sm:4px; --radius-md:8px; --radius-lg:16px;
+  --font-display:"Archivo",sans-serif; --font-body:"Lora",serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

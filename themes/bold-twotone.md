@@ -69,3 +69,19 @@ Scale: 13 / 15 / 17 / 24 / 40 / 64 / 96
 - No unverifiable claims
 - No national flag icons for locale/currency — use ISO codes (USD, EUR, KRW)
 - Display face never used below 40px (condensed weight breaks at small sizes)
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bright:#CDE82A; --deep:#1C3424; --bg:#FFFFFF; --text:#0E0F0C; --text-soft:#5C5F5A;
+  --border:rgba(14,15,12,.14);
+  --radius-card:16px; --radius-pill:999px;
+  --font-display:"Bricolage Grotesque",sans-serif; --font-body:"Inter",system-ui,sans-serif;
+}
+```

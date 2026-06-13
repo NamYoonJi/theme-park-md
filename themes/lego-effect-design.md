@@ -150,3 +150,21 @@ Every colored element = a cluster of stud cells:
 - Contrast: body text ≥ 4.5:1 against `--plate-black`; never set body text on saturated bricks.
 - Keyboard focus: 2px `--brick-orange` outline, offset 2px, grid-snapped where possible.
 - Brick surfaces are CSS-only (gradients/patterns); avoid per-stud DOM except inside mosaics (cap ≈ 400 cells per mosaic).
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --plate-black:#0D0D11; --plate-cell:#15151B; --stud-line:#1F1F27;
+  --brick-orange:#E8623C; --brick-purple:#9A6BE0; --brick-blue:#5BB8E8;
+  --brick-green:#5FCE8B; --brick-pink:#F2A7C3;
+  --ink-white:#F4F2EE; --ink-dim:#8B8B96;
+  --stud:48px; --radius:0;
+  --font-display:"Instrument Serif",serif; --font-body:"Inter",system-ui,sans-serif;
+}
+```

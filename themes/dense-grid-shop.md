@@ -94,3 +94,19 @@ Scale: 11 / 12 / 13 / 14 / 16 / 20. `font-variant-numeric: tabular-nums` on all 
 - Never crop product images to non-3:4 ratios; never rounded more than 4px
 - No more than one ranked row per page section
 - Don't animate layout (no reflowing masonry); grid positions are stable
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --panel:#F7F7F7; --ink:#222222; --ink-mid:#717171; --border:#DDDDDD;
+  --accent:#E8474D; --badge:#222222;
+  --radius-xs:2px; --radius-sm:4px; --radius-md:12px; --radius-lg:24px; --radius-pill:9999px;
+  --font-sans:"Pretendard",system-ui,sans-serif;
+}
+```

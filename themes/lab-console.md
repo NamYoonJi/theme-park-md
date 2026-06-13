@@ -93,3 +93,21 @@ Scale: 11 / 12 / 13 / 15 / 20 / 28. Nothing larger — this is a tool, not a pos
 - No pie/donut charts; lines and bars only
 - Don't center-align numbers — right-align in tables, always tabular mono
 - No dark mode in this spec (pair with a dark engineering theme instead)
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FBF9F9; --panel:#FFFFFF; --ink:#14141C; --ink-soft:#6F7890; --ink-faint:#A6ACBE;
+  --border:#E5E1DC; --accent:#4E79C4;
+  --s1:#4E79C4; --s2:#3E8E7E; --s3:#C9A23D; --s4:#9B6FB5; --s5:#C75D5D; --s6:#6F7890;
+  --running:#4E79C4; --finished:#3E8E7E; --failed:#C75D5D; --queued:#A6ACBE;
+  --radius-base:3px; --radius-md:6px; --radius-lg:8px; --radius-pill:999px;
+  --font-sans:"IBM Plex Sans",system-ui,sans-serif; --font-mono:"IBM Plex Mono",monospace;
+}
+```

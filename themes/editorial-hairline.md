@@ -67,3 +67,18 @@ Mixing rule: `Precision in <em class="serif">motion</em>` — max 3 instances pe
 
 - No shadows, glows, or gradients (preserve the hairline system)
 - Never exceed 3 serif-mix instances
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FBFAF9; --bg-deep:#14151A; --text:#1A1B25; --text-soft:#70707B;
+  --accent:#5266EB; --hairline:rgba(26,27,37,.12); --screen-tint:#EEEDFB;
+  --font-sans:"Inter",system-ui,sans-serif; --font-serif:"Instrument Serif",serif;
+}
+```

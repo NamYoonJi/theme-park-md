@@ -104,3 +104,21 @@ Scale: 11 / 12 / 13 / 14 / 16 / 18 / 20 / 24 / 32 / display.
 - No saturated red/orange accents (keep the single blue + violet glow)
 - No borders thicker than 1px; depth comes from blur and highlights
 - Never put body text directly over the glow without a glass layer between
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#07080A; --bg-100:#101111; --bg-200:#181A1A; --bg-300:#313133;
+  --fg:#F4F4F6; --fg-200:#C2C7CA; --fg-300:#78787C; --fg-400:#5E6366;
+  --border:hsl(195,5%,15%); --accent:#58AEFF; --glow:#7B5BD6;
+  --button-bg:rgba(255,255,255,.815); --button-fg:#181A1A;
+  --radius-xs:4px; --radius-sm:6px; --radius-md:12px; --radius-lg:16px; --radius-xl:20px; --radius-full:999px;
+  --font-sans:"Inter",system-ui,sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

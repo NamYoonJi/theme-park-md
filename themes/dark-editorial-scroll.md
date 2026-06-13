@@ -127,3 +127,19 @@ Stagger system:
 - Company: CatTower LTD only.
 - No real publications, brands, or persons.
 - Copy register: plain verbs, sentence case, no marketing filler.
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --canvas:#0F0F0F; --card:#1A1A1A; --card-edge:#262626; --chip-bg:#2A2A2A;
+  --text-hi:#F2F2F0; --text-mid:#9C9C98; --text-low:#6B6B67;
+  --amber:#D97A2B; --focus:#CDE3EF;
+  --font-display:"Inter Tight",sans-serif; --font-body:"Inter",sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

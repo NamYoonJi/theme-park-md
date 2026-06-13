@@ -80,3 +80,19 @@ Display lines may be cropped by `overflow: hidden` rows — cutting type at sect
 - No serif or script faces; no font weights below 400
 - No letter-spacing on display type beyond ±0.01em (bulk comes from size, not tracking)
 - Never soften the inversion hover with transitions longer than 0.1s
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#000000; --panel:#1A1A1A; --panel-2:#212121; --fg:#FFFFFF;
+  --fg-soft:rgba(255,255,255,.64); --accent:#FF5C00; --block:#FCB900;
+  --radius:0;
+  --font-display:"Archivo Black",sans-serif; --font-sans:"Archivo",sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

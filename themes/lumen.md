@@ -93,3 +93,29 @@ Gauge zones: ok = s1 teal, warn `#E0AF68`, crit `#F7768E`.
 - No shadows; depth comes from panel/inset steps and hairlines
 - Never clip a measured extreme; pad the domain instead
 - No decorative color — accent + series + ramp only
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#0B1220; --bg-panel:#111A2C; --bg-inset:#0E1626; --line:#22304A;
+  --text:#E6EDF7; --text-dim:#8DA0BC; --accent:#35D0C5;
+  --s1:#35D0C5; --s2:#7AA2F7; --s3:#E0AF68; --s4:#F7768E; --s5:#9ECE6A; --s6:#BB9AF7;
+  /* sequential ramp (heatmap, gauge arcs) - unchanged across themes */
+  --ramp1:#440154; --ramp2:#443983; --ramp3:#31688E; --ramp4:#21918C;
+  --ramp5:#35B779; --ramp6:#90D743; --ramp7:#FDE725;
+  --gauge-warn:#E0AF68; --gauge-crit:#F7768E;
+  --radius:8px;
+  --font-sans:"Figtree",system-ui,sans-serif; --font-mono:"IBM Plex Mono",monospace;
+}
+[data-theme="light"]{
+  --bg:#F4F6F9; --bg-panel:#FFFFFF; --bg-inset:#F0F3F7; --line:#D9E0EA;
+  --text:#14233B; --text-dim:#5C6F8A; --accent:#0E8F86;
+  --s1:#0E8F86; --s2:#3D6AD6; --s3:#9A6B14; --s4:#C9405E; --s5:#5C8A2E; --s6:#7A4FC9;
+}
+```

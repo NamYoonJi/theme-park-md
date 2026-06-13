@@ -214,3 +214,21 @@ Keep motion subtle; excess animation undermines the calm, technical tone.
 8. **Do** keep type weights light (300-500) and lean on size and spacing for hierarchy.
 9. **Don't** fully round corners except on pills, avatars, and status chips.
 10. **Do** keep copy plain and specific; the tone is "a precise tool for builders," not a sales pitch.
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#04070E; --bg-nav:#040710; --bg-elevated:#0C1019; --bg-card:#0D1525;
+  --border:#1A2030; --text-primary:#FFFFFF; --text-heading:#A8CAFA; --text-nav:#E0E9F8;
+  --text-body:#B6D6FC; --text-muted:#667085;
+  --accent:#9DC8FF; --accent-glow:#CAEEFF; --success:#5EDFAA; --warning:#F5C842; --info:#9DC8FF;
+  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-pill:999px; --space-unit:8px;
+  --font-sans:"Inter",system-ui,sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

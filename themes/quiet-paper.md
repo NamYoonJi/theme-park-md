@@ -70,3 +70,19 @@ Scale: 12 / 14 / 16 / 20 / 28 / 40 / 48 — weight stays 400-500 throughout; siz
 - No bold weights above 500
 - No dark-pattern commerce elements (timers, scarcity counters)
 - Do not pair this aesthetic with packaging/photography styles that imitate an existing premium brand's identity bundle — original artwork only
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFEF2; --bg-alt:#F6F5E8; --text:#333330; --text-soft:#6B6B66;
+  --line:#D8D7CC; --dark:#252525;
+  --radius:0;             /* rectilinear system - no radius anywhere */
+  --font-display:"Archivo",sans-serif; --font-serif:"Lora",serif;
+}
+```

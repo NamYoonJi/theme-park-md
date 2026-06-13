@@ -90,3 +90,20 @@ Scale: 13 / 15 / 16 / 20 / 24 / 32 / 48 / 72.
 - No radius below 8px; no sharp corners
 - Don't combine more than 2 play colors in one viewport region
 - Nothing mascot-like, no character illustration, no hand-drawn squiggles
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --ink:#21232C; --ink-soft:#5E6066; --border:#E4E2E8;
+  --deep:#332354; --tint:#F6F0FF;
+  --play-teal:#2BB59A; --play-coral:#F2616B; --play-gold:#F7B731; --play-sky:#3FB6E8;
+  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-pill:999px;
+  --font-display:"Bricolage Grotesque",sans-serif; --font-body:"Inter",system-ui,sans-serif;
+}
+```

@@ -68,3 +68,19 @@ Scale: 12 / 14 / 16 / 24 / 40 / 56 / 72
 - No emblem-like geometric marks that could read as an existing logo
 - `--signal` accent never exceeds 2 instances per page
 - No rounded corners, no shadows
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --bg-dim:#F5F5F5; --ink:#101820; --gray:#6E7176;
+  --line:#D6D6D6; --signal:#FF7500; --carbon:#0C0C0C;
+  --radius:0;
+  --font-display:"Inter Tight",sans-serif; --font-body:"Inter",system-ui,sans-serif;
+}
+```

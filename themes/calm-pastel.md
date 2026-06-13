@@ -92,3 +92,20 @@ Scale: 13 / 15 / 17 / 20 / 28 / 40 / 64. Sentence case everywhere; no all-caps h
 - No dark sections, no gradients, no glassmorphism
 - Pastel fields never carry saturated text or icons — accents live on `--card`/`--bg` only
 - No mascots, faces, blob characters, or illustration-style artwork — geometry only
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#F9F4F2; --card:#FFFFFF; --ink:#2D2C2B; --ink-body:#44423F; --ink-soft:#8A8580;
+  --accent:#2D52CC; --accent-warm:#E8A23D;
+  --field-sand:#E2DED9; --field-mist:#D9E4EF; --field-blush:#F3DDE2; --field-lilac:#EAE4F4;
+  --radius-sm:8px; --radius-md:16px; --radius-lg:24px; --radius-xl:32px; --radius-pill:112px;
+  --font-display:"Bricolage Grotesque",sans-serif; --font-body:"Inter",system-ui,sans-serif;
+}
+```

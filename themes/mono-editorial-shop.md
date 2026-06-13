@@ -67,3 +67,18 @@ Scale: 12 / 13 / 15 / 18 / 24 / 36 / 48 / 64
 
 - No accent or sale-red color (monochrome discipline)
 - No filters or treatments on product imagery
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --ink:#000000; --gray:#8E8E8E; --line:#ECECEC;
+  --radius:0;
+  --font-latin:"Archivo",sans-serif; --font-kr:"Pretendard",sans-serif; --font-serif-kr:"Noto Serif KR",serif;
+}
+```

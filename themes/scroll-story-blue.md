@@ -70,3 +70,19 @@ Numeric format: `1,234,567` with unit attached — never split the unit from the
 - No 3D graphics, characters, or illustration styles borrowed from existing products
 - No jargon in headlines (use everyday equivalents)
 - Never scale the mobile layout up on desktop — mockups keep fixed width
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --bg-section:#F2F4F6; --bg-dark:#17171C;
+  --text:#191F28; --text-sub:#4E5968; --accent:#3182F6;
+  --increase:#F04452; --decrease:#3182F6;
+  --font-sans:"Pretendard",system-ui,sans-serif;
+}
+```

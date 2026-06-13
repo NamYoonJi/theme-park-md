@@ -88,3 +88,26 @@ Status: ok `#A3BE8C`/`#5E8A4E` · warn `#EBCB8B`/`#9A7B2D` · crit `#BF616A`/`#A
 - No radius above 6px; no shadows in dark
 - KPI numerals never proportional — mono/tabular always
 - Don't animate hover affordances; tracking is instant
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#242933; --bg-panel:#2E3440; --bg-raised:#3B4252; --line:#434C5E;
+  --text:#ECEFF4; --text-dim:#A7B1C2; --accent:#88C0D0;
+  --s1:#88C0D0; --s2:#A3BE8C; --s3:#EBCB8B; --s4:#D08770; --s5:#B48EAD; --s6:#BF616A;
+  --ok:#A3BE8C; --warn:#EBCB8B; --crit:#BF616A;
+  --radius:6px;
+  --font-sans:"Figtree",system-ui,sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+[data-theme="light"]{
+  --bg:#ECEFF4; --bg-panel:#FFFFFF; --bg-raised:#E5E9F0; --line:#D8DEE9;
+  --text:#2E3440; --text-dim:#5B677A; --accent:#3B7C8F;
+  --ok:#5E8A4E; --warn:#9A7B2D; --crit:#A8404A;
+}
+```

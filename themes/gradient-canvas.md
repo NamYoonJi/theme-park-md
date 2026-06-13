@@ -69,3 +69,20 @@ Scale: 13 / 15 / 18 / 24 / 36 / 56 / 72
 - No third-party logos, illustrations, or copy text
 - Do not swap the accent toward neighboring brand-identifying hues; keep the specified value
 - Max one gradient instance per page
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg-light:#F6F9FC; --bg-dark:#0A2540; --text-primary:#0A2540; --text-secondary:#425466;
+  --accent:#6C5CE7; --code-bg:#0C2D48;
+  --gradient:linear-gradient(100deg,#FF7AC6,#6C5CE7,#00D4FF);  /* hero only, one instance */
+  --radius-pill:16px; --radius-card:8px;
+  --font-sans:"Inter",system-ui,sans-serif; --font-mono:"JetBrains Mono",monospace;
+}
+```

@@ -99,3 +99,27 @@ No monospace — numerals stabilized with `tabular-nums`.
 - No second accent hue; warm colors appear only as status
 - Don't mix mono fonts in — tabular-nums does the alignment
 - Delta indicators always arrows + text, never color alone
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#F4F4F4; --bg-panel:#FFFFFF; --bg-raised:#F4F4F4; --line:#E0E0E0;
+  --ink:#161616; --text-dim:#6F6F6F; --brand:#003D8F; --accent:#0F62FE;
+  --s1:#0F62FE; --s2:#1192E8; --s3:#007D79; --s4:#6929C4; --s5:#161616;
+  --ok:#198038; --warn:#B28600; --crit:#DA1E28;
+  --radius:0; --radius-chip:2px; --space-unit:12px;
+  --font-sans:"Figtree",system-ui,sans-serif;
+}
+[data-theme="dark"]{
+  --bg:#061224; --bg-panel:#0B1F3A; --bg-raised:#102747; --line:#24395C;
+  --ink:#F2F4F8; --text-dim:#9FB1C9; --brand:#78A9FF; --accent:#4589FF;
+  --s1:#4589FF; --s2:#33B1FF; --s3:#08BDBA; --s4:#A56EFF; --s5:#F2F4F8;
+  --ok:#42BE65; --warn:#D2A106; --crit:#FA4D56;
+}
+```

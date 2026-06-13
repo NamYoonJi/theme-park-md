@@ -193,3 +193,20 @@ Disable all under `prefers-reduced-motion`.
 - Carousel: keyboard operable, pause control, `aria-roledescription="carousel"`.
 - Images: meaningful `alt`; decorative product shots `alt=""` when adjacent text duplicates.
 - Semantic landmarks: `header / nav / main / footer`.
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg-base:#FFFFFF; --bg-soft:#F7F7F7; --bg-inverse:#000000;
+  --ink-primary:#000000; --ink-secondary:#555555; --ink-tertiary:#909090; --line:#E5E5E5;
+  --accent-blue:#1428A0; --badge-navy:#2B3DA8; --sky:#D9E9FA;
+  --radius-card:10px; --radius-lg:14px; --radius-pill:9999px;
+  --font-sans:"Inter",system-ui,sans-serif;
+}
+```

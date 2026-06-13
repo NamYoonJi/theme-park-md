@@ -71,3 +71,19 @@ Scale: 12 / 14 / 16 / 20 / 28 / 40 / 52
 - Do not adopt any third party's signature illustration style; use abstract or original artwork only
 - Never more than one accent color
 - Never substitute platform emoji for icons
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --bg-soft:#F7F6F3; --text:#191918; --text-soft:#6F6E69;
+  --accent:#2383E2; --callout:#FBF3DB; --border:#E9E9E7;
+  --radius-card:12px; --radius-cta:8px;
+  --font-sans:"Inter",system-ui,sans-serif; --font-serif:"Lora",serif;
+}
+```

@@ -107,3 +107,27 @@ Status: success `#198038`, failed `#FA4D56`, inconclusive `#878D96`.
 - No more than the listed series colors, always in fixed order
 - Never signal status by color alone — pair with text/value
 - No gradients on cards; shadow appears in light theme only
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#F7F8FC; --bg-panel:#FFFFFF; --bg-side:#191B2B; --line:#E4E7F2;
+  --text:#1C2033; --text-dim:#6B7290; --accent:#6929C4; --accent-soft:#F1EBFB;
+  /* data series (categorical, fixed order) */
+  --s1:#6929C4; --s2:#1192E8; --s3:#005D5D; --s4:#9F1853;
+  --s5:#FA4D56; --s6:#570408; --s7:#198038; --s8:#B28600;
+  --success:#198038; --failed:#FA4D56; --inconclusive:#878D96;
+  --radius-chip:999px; --radius-card:14px; --radius-control:8px;
+  --font-sans:"Figtree",system-ui,sans-serif;
+}
+[data-theme="dark"]{
+  --bg:#13141F; --bg-panel:#1C1E2E; --bg-side:#101120; --line:#2C2F45;
+  --text:#EDEEF7; --text-dim:#9AA0BF; --accent:#BE95FF; --accent-soft:#2A2342;
+}
+```

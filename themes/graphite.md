@@ -96,3 +96,27 @@ Status: ok s2, warn s3, crit s4 (per-theme values above).
 - No shadows in dark theme; no radius above 8px
 - Status never color-only (badges carry text; scatter outliers carry rings)
 - Don't animate tooltips or crosshairs
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#161618; --bg-panel:#1D1D20; --bg-raised:#26262A; --line:#313136;
+  --text:#E8E8EA; --text-dim:#9A9AA2; --accent:#58A6FF;
+  --s1:#58A6FF; --s2:#3FB950; --s3:#D29922; --s4:#F85149; --s5:#BC8CFF; --s6:#39C5CF;
+  --ok:#3FB950; --warn:#D29922; --crit:#F85149;
+  --radius:8px; --space-unit:10px;
+  --font-sans:"Figtree",system-ui,sans-serif; --font-mono:"IBM Plex Mono",monospace;
+}
+[data-theme="light"]{
+  --bg:#F6F6F7; --bg-panel:#FFFFFF; --bg-raised:#EFEFF1; --line:#E0E0E3;
+  --text:#1B1B1E; --text-dim:#5C5C66; --accent:#0969DA;
+  --s1:#0969DA; --s2:#1A7F37; --s3:#9A6700; --s4:#CF222E; --s5:#8250C8; --s6:#1B7C83;
+  --ok:#1A7F37; --warn:#9A6700; --crit:#CF222E;
+}
+```

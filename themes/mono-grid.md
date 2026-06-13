@@ -68,3 +68,21 @@ Scale: 13 / 14 / 16 / 20 / 32 / 48 / 64 / 80
 - No chromatic color on layout elements
 - No radius values other than 6px
 - Gradients never extend to body text or backgrounds
+
+
+---
+
+## CSS tokens
+
+Copy-paste starting point - the same values documented above, as CSS custom properties (the prose spec stays the source of truth).
+
+```css
+:root{
+  --bg:#FFFFFF; --fg:#000000;          /* dual mode: swap to #000 / #FFF in dark */
+  /* --gray-100..900 ramp: #1A1A1A -> #EAEAEA in 9 steps */
+  --blue:#0070F3; --success:#50E3C2; --error:#FF4D4D;
+  --radius:6px;
+  --font-sans:"Geist",system-ui,sans-serif; --font-mono:"Geist Mono",monospace;
+}
+[data-theme="dark"]{ --bg:#000000; --fg:#FFFFFF; }
+```
