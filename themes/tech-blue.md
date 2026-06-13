@@ -1,7 +1,7 @@
-# Design Spec — "Global Tech Brand" Style (Samsung.com-inspired)
+# Design Spec — Global Consumer-Electronics Brand Style
 
 Codename: `techcorp-global`
-Reference feel: large consumer-electronics brand homepage (samsung.com/sec style) — clean, white, product-photography-driven, full-bleed promotional cards, dense but ordered.
+Reference feel: a large consumer-electronics brand homepage — clean, white, product-photography-driven, full-bleed promotional cards, dense but ordered.
 Rule: any demo content built from this spec must use fictional brands and persons only — never real people or publications.
 
 ---
@@ -70,7 +70,7 @@ One family only. Korean-market parity: if KR locale, substitute "Noto Sans KR" w
 ├──────────────────────────────────────────────┤
 │ "Featured" — 4-up product card row           │
 ├──────────────────────────────────────────────┤
-│ CATEGORY SECTION (in-page, samsung PLP style)│
+│ CATEGORY SECTION (in-page product-list view) │
 │  H1 + subcategory card carousel + tabs       │
 │  filter bar + dropdown filter pills          │
 ├──────────────────────────────────────────────┤

@@ -84,7 +84,7 @@ CRT terminals, textured and toy-like novelty surfaces.
 | `themes/phosphor.md` | Green CRT terminal, bitmap type, working TTY |
 | `themes/violet-phosphor.md` | Violet CRT terminal variant, live monitor and shell |
 | `themes/grainy-blur.md` | Dark charcoal canvas, blurred color light-curtains, heavy film grain |
-| `themes/lego-effect-design.md` | Studded brick components, hard shadows, toy-grid baseplate |
+| `themes/studded-brick.md` | Studded toy-brick components, hard shadows, baseplate grid |
 
 ### Landing & marketing
 
@@ -190,7 +190,7 @@ CRT terminals, textured and toy-like novelty surfaces.
 </tr>
 <tr>
 <td width="50%"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" width="49%"><img src="assets/grainy-blur2.png" alt="grainy-blur second view" width="49%"><br><sub><a href="themes/grainy-blur.md">themes/grainy-blur.md</a></sub></td>
-<td width="50%"><img src="assets/lego-effect-design.png" alt="lego-effect-design preview" width="49%"><img src="assets/lego-effect-design-b.png" alt="lego-effect-design second view" width="49%"><br><sub><a href="themes/lego-effect-design.md">themes/lego-effect-design.md</a></sub></td>
+<td width="50%"><img src="assets/studded-brick.png" alt="studded-brick preview" width="49%"><img src="assets/studded-brick-b.png" alt="studded-brick second view" width="49%"><br><sub><a href="themes/studded-brick.md">themes/studded-brick.md</a></sub></td>
 </tr>
 </table>
 

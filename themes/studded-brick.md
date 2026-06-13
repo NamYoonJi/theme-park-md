@@ -1,14 +1,14 @@
-# Design Spec — Lego Effect UI
+# Design Spec — Studded Brick UI
 
 Codename: `BRICKBOARD`
-Type: Dark studded-brick design system. Layout and elements are built from Lego-style bricks. Typography stays clean and modern (no pixel/blocky fonts).
+Type: Dark studded-brick design system. Layout and elements are built from interlocking toy-style bricks. Typography stays clean and modern (no pixel/blocky fonts).
 
 ---
 
 ## 1. Concept
 
-- The entire page reads as a black Lego baseplate. Every UI element (cards, buttons, images, charts, avatars) is assembled from brick units snapped to that baseplate grid.
-- Fonts are NOT lego-styled. Text floats on top of the brick world in a clean grotesque/serif pairing. Contrast between "toy-built" surfaces and "adult" typography is the core tension of the design.
+- The entire page reads as a black studded baseplate. Every UI element (cards, buttons, images, charts, avatars) is assembled from brick units snapped to that baseplate grid.
+- Fonts are NOT brick-styled. Text floats on top of the brick world in a clean grotesque/serif pairing. Contrast between "toy-built" surfaces and "adult" typography is the core tension of the design.
 - Images and hero graphics are rendered as brick mosaics: pixelated color blocks, each cell carrying a circular stud highlight.
 
 ## 2. Design Tokens
@@ -38,7 +38,7 @@ Rules:
 | Role | Face | Weight | Notes |
 |---|---|---|---|
 | Display | "Instrument Serif" or "Fraunces" | 400–500 | Large, tight leading. Set in white over the baseplate |
-| Body / UI | "Inter" or "Söhne"-like grotesque | 400 / 500 | 15–16px base, 1.6 line-height |
+| Body / UI | "Inter" (or any neutral grotesque) | 400 / 500 | 15–16px base, 1.6 line-height |
 | Label / Eyebrow | Same grotesque | 600, uppercase, +0.12em tracking | Small caps style labels, e.g. `UX/UI DESIGN RESOURCE` |
 
 Rules:
@@ -74,7 +74,7 @@ Every colored element = a cluster of stud cells:
 
 - Photos/illustrations are replaced by mosaics: downsample the source to the stud grid, render each cell as a solid brick with stud overlay.
 - Recommended: `<canvas>` downsampling at runtime, or pre-baked CSS grid of cells for static pages.
-- Mosaic edges follow the pixel staircase — circles become stepped circles (see reference: Figma logo built from bricks).
+- Mosaic edges follow the pixel staircase — circles become stepped, mosaic-style outlines.
 
 ### 3.4 Elevation
 
@@ -142,7 +142,7 @@ Every colored element = a cluster of stud cells:
 - Company: **CatTower LTD** — fictional design-tools studio.
 - People: **Kitty Park** (Design Lead), **Ya-ong Kim** (UI Designer), **Calico Lee** (Engineer).
 - Sample copy directions: "Build interfaces brick by brick", product name "Brickboard", resource label "UX/UI Design Resource".
-- Never use real people, real brands, or real publications. Lego is a visual metaphor only — do not use the LEGO logo or trademark in copy.
+- Never use real people, real brands, or real publications. The studded-brick look is a generic visual metaphor only — do not reference, name, or depict any specific toy-brick brand, logo, or trademark in copy or imagery.
 
 ## 9. Quality Floor
 
