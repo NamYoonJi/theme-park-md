@@ -2,7 +2,7 @@
   <img src="assets/banner.svg" alt="theme-park.md" width="100%">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/themes-31-5E6AD2?style=flat-square" alt="31 themes">
+  <img src="https://img.shields.io/badge/themes-32-5E6AD2?style=flat-square" alt="32 themes">
   <img src="https://img.shields.io/badge/format-markdown_only-101820?style=flat-square" alt="markdown only">
   <img src="https://img.shields.io/badge/docs-CC_BY_4.0-2383E2?style=flat-square" alt="CC BY 4.0">
 </p>
@@ -85,6 +85,7 @@ CRT terminals, textured and toy-like novelty surfaces.
 | `themes/violet-phosphor.md` | Violet CRT terminal variant, live monitor and shell |
 | `themes/grainy-blur.md` | Dark charcoal canvas, blurred color light-curtains, heavy film grain |
 | `themes/studded-brick.md` | Studded toy-brick components, hard shadows, baseplate grid |
+| `themes/ascii-portfolio.md` | White dot-matrix type on black, dithered ASCII portrait, keyboard-navigated |
 
 ### Landing & marketing
 
@@ -191,6 +192,9 @@ CRT terminals, textured and toy-like novelty surfaces.
 <tr>
 <td width="50%"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" width="49%"><img src="assets/grainy-blur2.png" alt="grainy-blur second view" width="49%"><br><sub><a href="themes/grainy-blur.md">themes/grainy-blur.md</a></sub></td>
 <td width="50%"><img src="assets/studded-brick.png" alt="studded-brick preview" width="49%"><img src="assets/studded-brick-b.png" alt="studded-brick second view" width="49%"><br><sub><a href="themes/studded-brick.md">themes/studded-brick.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/ascii-portfolio.png" alt="ascii-portfolio preview" width="49%"><img src="assets/ascii-portfolio-b.png" alt="ascii-portfolio second view" width="49%"><br><sub><a href="themes/ascii-portfolio.md">themes/ascii-portfolio.md</a></sub></td>
 </tr>
 </table>
 
