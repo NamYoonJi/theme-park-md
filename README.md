@@ -2,7 +2,7 @@
   <img src="assets/banner.svg" alt="theme-park.md" width="100%">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/themes-25-5E6AD2?style=flat-square" alt="25 themes">
+  <img src="https://img.shields.io/badge/themes-31-5E6AD2?style=flat-square" alt="31 themes">
   <img src="https://img.shields.io/badge/format-markdown_only-101820?style=flat-square" alt="markdown only">
   <img src="https://img.shields.io/badge/docs-CC_BY_4.0-2383E2?style=flat-square" alt="CC BY 4.0">
 </p>
@@ -56,10 +56,16 @@ into this
 | `themes/orange-offset-mono.md` | Offset black headline blocks on gray, mono labels, stair motif |
 | `themes/lego-effect-design.md` | Studded brick components, hard shadows, toy-grid baseplate |
 | `themes/dark-editorial-scroll.md` | Near-black editorial scroll, sticky title column, warm gradient imagery |
+| `themes/aurora.md` | Light analytics dashboard, dark sidebar, purple accent, donut/bar viz |
+| `themes/graphite.md` | Matte charcoal industrial console, color only in data, ink-in reveal |
+| `themes/marine-grid.md` | Square-corner corporate sensor board, deep marine blue, hairline panels |
+| `themes/lumen.md` | Navy instrument panel, radial gauges, uniform-ramp heatmaps, mono readouts |
+| `themes/nocturne.md` | Dense slate night-ops board, frost accent, packed 12-col panels |
+| `themes/pulse.md` | Consumer-soft monitor, one blue, springy count-ups, large rounded cards |
 
 ## Previews
 
-Each theme below was built into a single self-contained HTML page from its spec alone — fictional content, line-style icons, no emoji. Two views per theme (hero + a section below the fold); the caption links to the spec it was built from.
+Each theme below was built into a single self-contained HTML page from its spec alone — fictional content, line-style icons, no emoji. Two views per theme (hero + a section below the fold, or the opposite color scheme for dual-theme dashboards); the caption links to the spec it was built from.
 
 <table>
 <tr>
@@ -112,6 +118,18 @@ Each theme below was built into a single self-contained HTML page from its spec 
 </tr>
 <tr>
 <td width="50%"><img src="assets/dark-editorial-scroll.png" alt="dark-editorial-scroll preview" width="49%"><img src="assets/dark-editorial-scroll-b.png" alt="dark-editorial-scroll second view" width="49%"><br><sub><a href="themes/dark-editorial-scroll.md">themes/dark-editorial-scroll.md</a></sub></td>
+<td width="50%"><img src="assets/aurora.png" alt="aurora preview" width="49%"><img src="assets/aurora-b.png" alt="aurora second view" width="49%"><br><sub><a href="themes/aurora.md">themes/aurora.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/graphite.png" alt="graphite preview" width="49%"><img src="assets/graphite-b.png" alt="graphite second view" width="49%"><br><sub><a href="themes/graphite.md">themes/graphite.md</a></sub></td>
+<td width="50%"><img src="assets/marine-grid.png" alt="marine-grid preview" width="49%"><img src="assets/marine-grid-b.png" alt="marine-grid second view" width="49%"><br><sub><a href="themes/marine-grid.md">themes/marine-grid.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/lumen.png" alt="lumen preview" width="49%"><img src="assets/lumen-b.png" alt="lumen second view" width="49%"><br><sub><a href="themes/lumen.md">themes/lumen.md</a></sub></td>
+<td width="50%"><img src="assets/nocturne.png" alt="nocturne preview" width="49%"><img src="assets/nocturne-b.png" alt="nocturne second view" width="49%"><br><sub><a href="themes/nocturne.md">themes/nocturne.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/pulse.png" alt="pulse preview" width="49%"><img src="assets/pulse-b.png" alt="pulse second view" width="49%"><br><sub><a href="themes/pulse.md">themes/pulse.md</a></sub></td>
 </tr>
 </table>
 
