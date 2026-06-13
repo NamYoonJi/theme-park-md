@@ -29,112 +29,180 @@ into this
 
 ## Themes
 
+### Dashboards & consoles
+
+Data, metrics and monitoring UIs — each shown in both its light and dark scheme.
+
 | Theme | Visual character |
 |---|---|
-| `themes/gradient-canvas.md` | Light, one animated gradient moment, diagonal cuts |
-| `themes/mono-grid.md` | Black/white geometry, exposed line grid, mono artifacts |
-| `themes/warm-workspace.md` | Warm white, cards and toggles, one calm accent |
-| `themes/scroll-story-blue.md` | Mobile-first full-screen scroll narrative, single blue |
-| `themes/editorial-hairline.md` | Warm off-white, hairline rules, serif-italic accents |
-| `themes/bold-twotone.md` | One deep + one bright tone, condensed display type |
-| `themes/quiet-paper.md` | Paper tones, long-form copy, radius 0, zero urgency |
-| `themes/spec-minimal.md` | Monochrome, oversized spec numerals, uppercase labels |
-| `themes/mono-editorial-shop.md` | B/W editorial commerce, mixed Latin/Korean type |
-| `themes/midnight.md` | Dark navy engineering UI, single ice-blue accent, border depth |
-| `themes/phosphor.md` | Green CRT terminal, bitmap type, working TTY |
-| `themes/violet-phosphor.md` | Violet CRT terminal variant, live monitor and shell |
-| `themes/grainy-blur.md` | Dark charcoal canvas, blurred color light-curtains, heavy film grain |
-| `themes/calm-pastel.md` | Warm paper canvas, super-rounded pastel surfaces, breathing motion |
-| `themes/dark-glass.md` | Near-black frosted glass, hairline highlights, single violet glow |
-| `themes/scrolly-data.md` | Light scroll-driven data essay, serif editorial voice, live charts |
-| `themes/lab-console.md` | Light engineering console, dense tables, run metrics |
-| `themes/brutalist-pop.md` | Black poster-size grotesque, single orange pop, marquee bands |
-| `themes/kinetic-type.md` | White canvas, oversized grotesque + serif italic, scroll-driven type |
-| `themes/playful-blocks.md` | Saturated color chips, chunky 3D-lip buttons, springy motion |
-| `themes/dense-grid-shop.md` | High-density product grid, b/w chrome, one warm red for prices |
-| `themes/tech-blue.md` | Sky-tint campaign commerce UI, single cobalt accent |
-| `themes/orange-offset-mono.md` | Offset black headline blocks on gray, mono labels, stair motif |
-| `themes/lego-effect-design.md` | Studded brick components, hard shadows, toy-grid baseplate |
-| `themes/dark-editorial-scroll.md` | Near-black editorial scroll, sticky title column, warm gradient imagery |
 | `themes/aurora.md` | Light analytics dashboard, dark sidebar, purple accent, donut/bar viz |
 | `themes/graphite.md` | Matte charcoal industrial console, color only in data, ink-in reveal |
 | `themes/marine-grid.md` | Square-corner corporate sensor board, deep marine blue, hairline panels |
 | `themes/lumen.md` | Navy instrument panel, radial gauges, uniform-ramp heatmaps, mono readouts |
 | `themes/nocturne.md` | Dense slate night-ops board, frost accent, packed 12-col panels |
 | `themes/pulse.md` | Consumer-soft monitor, one blue, springy count-ups, large rounded cards |
+| `themes/lab-console.md` | Light engineering console, dense run tables, live metrics |
+
+### Research & project pages
+
+Paper landings, case studies and scroll-driven data stories.
+
+| Theme | Visual character |
+|---|---|
+| `themes/dark-editorial-scroll.md` | Research/paper landing, sticky title column, bright figure cards on near-black |
+| `themes/scrolly-data.md` | Light scroll-driven data essay, serif editorial voice, live charts |
+
+### Commerce & catalog
+
+Product grids, storefronts and campaign pages.
+
+| Theme | Visual character |
+|---|---|
+| `themes/dense-grid-shop.md` | High-density product grid, b/w chrome, one warm red for prices |
+| `themes/mono-editorial-shop.md` | B/W editorial commerce, mixed Latin/Korean type |
+| `themes/tech-blue.md` | Sky-tint campaign commerce UI, single cobalt accent |
+
+### Portfolio & editorial
+
+Expressive type, galleries and long-form reading.
+
+| Theme | Visual character |
+|---|---|
+| `themes/kinetic-type.md` | White canvas, oversized grotesque + serif italic, scroll-driven type |
+| `themes/mono-grid.md` | Black/white geometry, exposed line grid, mono artifacts |
+| `themes/orange-offset-mono.md` | Offset black headline blocks on gray, mono labels, stair motif |
+| `themes/editorial-hairline.md` | Warm off-white, hairline rules, serif-italic accents |
+| `themes/brutalist-pop.md` | Black poster-size grotesque, single orange pop, marquee bands |
+| `themes/quiet-paper.md` | Paper tones, long-form copy, radius 0, zero urgency |
+
+### Terminal & experimental
+
+CRT terminals, textured and toy-like novelty surfaces.
+
+| Theme | Visual character |
+|---|---|
+| `themes/phosphor.md` | Green CRT terminal, bitmap type, working TTY |
+| `themes/violet-phosphor.md` | Violet CRT terminal variant, live monitor and shell |
+| `themes/grainy-blur.md` | Dark charcoal canvas, blurred color light-curtains, heavy film grain |
+| `themes/lego-effect-design.md` | Studded brick components, hard shadows, toy-grid baseplate |
+
+### Landing & marketing
+
+General web pages, split by default colour scheme.
+
+**Light**
+
+| Theme | Visual character |
+|---|---|
+| `themes/gradient-canvas.md` | Light, one animated gradient moment, diagonal cuts |
+| `themes/warm-workspace.md` | Warm white, cards and toggles, one calm accent |
+| `themes/calm-pastel.md` | Warm paper canvas, super-rounded pastel surfaces, breathing motion |
+| `themes/playful-blocks.md` | Saturated color chips, chunky 3D-lip buttons, springy motion |
+| `themes/spec-minimal.md` | Monochrome, oversized spec numerals, uppercase labels |
+| `themes/scroll-story-blue.md` | Mobile-first full-screen scroll narrative, single blue |
+
+**Dark**
+
+| Theme | Visual character |
+|---|---|
+| `themes/dark-glass.md` | Near-black frosted glass, hairline highlights, single violet glow |
+| `themes/bold-twotone.md` | One deep + one bright tone, condensed display type |
+| `themes/midnight.md` | Dark navy engineering UI, single ice-blue accent, border depth |
 
 ## Previews
 
-Each theme below was built into a single self-contained HTML page from its spec alone — fictional content, line-style icons, no emoji. Two views per theme (hero + a section below the fold, or the opposite color scheme for dual-theme dashboards); the caption links to the spec it was built from.
+Each theme was built into a single self-contained HTML page from its spec alone — fictional content, line-style icons, no emoji. Two views per theme (hero + a section below the fold; dashboards show the opposite colour scheme). Grouped by what each theme is for.
+
+### Dashboards & consoles
+
+Data, metrics and monitoring UIs — each shown in both its light and dark scheme.
 
 <table>
 <tr>
-<td width="50%"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" width="49%"><img src="assets/gradient-canvas-b.png" alt="gradient-canvas second view" width="49%"><br><sub><a href="themes/gradient-canvas.md">themes/gradient-canvas.md</a></sub></td>
+<td width="50%"><img src="assets/aurora.png" alt="aurora preview" width="49%"><img src="assets/aurora-b.png" alt="aurora second view" width="49%"><br><sub><a href="themes/aurora.md">themes/aurora.md</a></sub></td>
+<td width="50%"><img src="assets/graphite.png" alt="graphite preview" width="49%"><img src="assets/graphite-b.png" alt="graphite second view" width="49%"><br><sub><a href="themes/graphite.md">themes/graphite.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/marine-grid.png" alt="marine-grid preview" width="49%"><img src="assets/marine-grid-b.png" alt="marine-grid second view" width="49%"><br><sub><a href="themes/marine-grid.md">themes/marine-grid.md</a></sub></td>
+<td width="50%"><img src="assets/lumen.png" alt="lumen preview" width="49%"><img src="assets/lumen-b.png" alt="lumen second view" width="49%"><br><sub><a href="themes/lumen.md">themes/lumen.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/nocturne.png" alt="nocturne preview" width="49%"><img src="assets/nocturne-b.png" alt="nocturne second view" width="49%"><br><sub><a href="themes/nocturne.md">themes/nocturne.md</a></sub></td>
+<td width="50%"><img src="assets/pulse.png" alt="pulse preview" width="49%"><img src="assets/pulse-b.png" alt="pulse second view" width="49%"><br><sub><a href="themes/pulse.md">themes/pulse.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/lab-console.png" alt="lab-console preview" width="49%"><img src="assets/lab-console-b.png" alt="lab-console second view" width="49%"><br><sub><a href="themes/lab-console.md">themes/lab-console.md</a></sub></td>
+</tr>
+</table>
+
+### Research & project pages
+
+Paper landings, case studies and scroll-driven data stories.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/dark-editorial-scroll.png" alt="dark-editorial-scroll preview" width="49%"><img src="assets/dark-editorial-scroll-b.png" alt="dark-editorial-scroll second view" width="49%"><br><sub><a href="themes/dark-editorial-scroll.md">themes/dark-editorial-scroll.md</a></sub></td>
+<td width="50%"><img src="assets/scrolly-data.png" alt="scrolly-data preview" width="49%"><img src="assets/scrolly-data-b.png" alt="scrolly-data second view" width="49%"><br><sub><a href="themes/scrolly-data.md">themes/scrolly-data.md</a></sub></td>
+</tr>
+</table>
+
+### Commerce & catalog
+
+Product grids, storefronts and campaign pages.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/dense-grid-shop.png" alt="dense-grid-shop preview" width="49%"><img src="assets/dense-grid-shop-b.png" alt="dense-grid-shop second view" width="49%"><br><sub><a href="themes/dense-grid-shop.md">themes/dense-grid-shop.md</a></sub></td>
+<td width="50%"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" width="49%"><img src="assets/mono-editorial-shop-b.png" alt="mono-editorial-shop second view" width="49%"><br><sub><a href="themes/mono-editorial-shop.md">themes/mono-editorial-shop.md</a></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/tech-blue.png" alt="tech-blue preview" width="49%"><img src="assets/tech-blue-b.png" alt="tech-blue second view" width="49%"><br><sub><a href="themes/tech-blue.md">themes/tech-blue.md</a></sub></td>
+</tr>
+</table>
+
+### Portfolio & editorial
+
+Expressive type, galleries and long-form reading.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/kinetic-type.png" alt="kinetic-type preview" width="49%"><img src="assets/kinetic-type-b.png" alt="kinetic-type second view" width="49%"><br><sub><a href="themes/kinetic-type.md">themes/kinetic-type.md</a></sub></td>
 <td width="50%"><img src="assets/mono-grid.png" alt="mono-grid preview" width="49%"><img src="assets/mono-grid-b.png" alt="mono-grid second view" width="49%"><br><sub><a href="themes/mono-grid.md">themes/mono-grid.md</a></sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="assets/warm-workspace.png" alt="warm-workspace preview" width="49%"><img src="assets/warm-workspace-b.png" alt="warm-workspace second view" width="49%"><br><sub><a href="themes/warm-workspace.md">themes/warm-workspace.md</a></sub></td>
-<td width="50%"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" width="49%"><img src="assets/scroll-story-blue-b.png" alt="scroll-story-blue second view" width="49%"><br><sub><a href="themes/scroll-story-blue.md">themes/scroll-story-blue.md</a></sub></td>
-</tr>
-<tr>
+<td width="50%"><img src="assets/orange-offset-mono.png" alt="orange-offset-mono preview" width="49%"><img src="assets/orange-offset-mono-b.png" alt="orange-offset-mono second view" width="49%"><br><sub><a href="themes/orange-offset-mono.md">themes/orange-offset-mono.md</a></sub></td>
 <td width="50%"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" width="49%"><img src="assets/editorial-hairline-b.png" alt="editorial-hairline second view" width="49%"><br><sub><a href="themes/editorial-hairline.md">themes/editorial-hairline.md</a></sub></td>
-<td width="50%"><img src="assets/bold-twotone.png" alt="bold-twotone preview" width="49%"><img src="assets/bold-twotone-b.png" alt="bold-twotone second view" width="49%"><br><sub><a href="themes/bold-twotone.md">themes/bold-twotone.md</a></sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="assets/brutalist-pop.png" alt="brutalist-pop preview" width="49%"><img src="assets/brutalist-pop-b.png" alt="brutalist-pop second view" width="49%"><br><sub><a href="themes/brutalist-pop.md">themes/brutalist-pop.md</a></sub></td>
 <td width="50%"><img src="assets/quiet-paper.png" alt="quiet-paper preview" width="49%"><img src="assets/quiet-paper-b.png" alt="quiet-paper second view" width="49%"><br><sub><a href="themes/quiet-paper.md">themes/quiet-paper.md</a></sub></td>
-<td width="50%"><img src="assets/spec-minimal.png" alt="spec-minimal preview" width="49%"><img src="assets/spec-minimal-b.png" alt="spec-minimal second view" width="49%"><br><sub><a href="themes/spec-minimal.md">themes/spec-minimal.md</a></sub></td>
 </tr>
-<tr>
-<td width="50%"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" width="49%"><img src="assets/mono-editorial-shop-b.png" alt="mono-editorial-shop second view" width="49%"><br><sub><a href="themes/mono-editorial-shop.md">themes/mono-editorial-shop.md</a></sub></td>
-<td width="50%"><img src="assets/midnight.png" alt="midnight preview" width="49%"><img src="assets/midnight-b.png" alt="midnight second view" width="49%"><br><sub><a href="themes/midnight.md">themes/midnight.md</a></sub></td>
-</tr>
+</table>
+
+### Terminal & experimental
+
+CRT terminals, textured and toy-like novelty surfaces.
+
+<table>
 <tr>
 <td width="50%"><img src="assets/phosphor.png" alt="phosphor preview" width="49%"><img src="assets/phosphor-b.png" alt="phosphor second view" width="49%"><br><sub><a href="themes/phosphor.md">themes/phosphor.md</a></sub></td>
 <td width="50%"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" width="49%"><img src="assets/violet-phosphor-b.png" alt="violet-phosphor second view" width="49%"><br><sub><a href="themes/violet-phosphor.md">themes/violet-phosphor.md</a></sub></td>
 </tr>
 <tr>
 <td width="50%"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" width="49%"><img src="assets/grainy-blur2.png" alt="grainy-blur second view" width="49%"><br><sub><a href="themes/grainy-blur.md">themes/grainy-blur.md</a></sub></td>
-<td width="50%"><img src="assets/calm-pastel.png" alt="calm-pastel preview" width="49%"><img src="assets/calm-pastel-b.png" alt="calm-pastel second view" width="49%"><br><sub><a href="themes/calm-pastel.md">themes/calm-pastel.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/dark-glass.png" alt="dark-glass preview" width="49%"><img src="assets/dark-glass-b.png" alt="dark-glass second view" width="49%"><br><sub><a href="themes/dark-glass.md">themes/dark-glass.md</a></sub></td>
-<td width="50%"><img src="assets/scrolly-data.png" alt="scrolly-data preview" width="49%"><img src="assets/scrolly-data-b.png" alt="scrolly-data second view" width="49%"><br><sub><a href="themes/scrolly-data.md">themes/scrolly-data.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/lab-console.png" alt="lab-console preview" width="49%"><img src="assets/lab-console-b.png" alt="lab-console second view" width="49%"><br><sub><a href="themes/lab-console.md">themes/lab-console.md</a></sub></td>
-<td width="50%"><img src="assets/brutalist-pop.png" alt="brutalist-pop preview" width="49%"><img src="assets/brutalist-pop-b.png" alt="brutalist-pop second view" width="49%"><br><sub><a href="themes/brutalist-pop.md">themes/brutalist-pop.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/kinetic-type.png" alt="kinetic-type preview" width="49%"><img src="assets/kinetic-type-b.png" alt="kinetic-type second view" width="49%"><br><sub><a href="themes/kinetic-type.md">themes/kinetic-type.md</a></sub></td>
-<td width="50%"><img src="assets/playful-blocks.png" alt="playful-blocks preview" width="49%"><img src="assets/playful-blocks-b.png" alt="playful-blocks second view" width="49%"><br><sub><a href="themes/playful-blocks.md">themes/playful-blocks.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/dense-grid-shop.png" alt="dense-grid-shop preview" width="49%"><img src="assets/dense-grid-shop-b.png" alt="dense-grid-shop second view" width="49%"><br><sub><a href="themes/dense-grid-shop.md">themes/dense-grid-shop.md</a></sub></td>
-<td width="50%"><img src="assets/tech-blue.png" alt="tech-blue preview" width="49%"><img src="assets/tech-blue-b.png" alt="tech-blue second view" width="49%"><br><sub><a href="themes/tech-blue.md">themes/tech-blue.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/orange-offset-mono.png" alt="orange-offset-mono preview" width="49%"><img src="assets/orange-offset-mono-b.png" alt="orange-offset-mono second view" width="49%"><br><sub><a href="themes/orange-offset-mono.md">themes/orange-offset-mono.md</a></sub></td>
 <td width="50%"><img src="assets/lego-effect-design.png" alt="lego-effect-design preview" width="49%"><img src="assets/lego-effect-design-b.png" alt="lego-effect-design second view" width="49%"><br><sub><a href="themes/lego-effect-design.md">themes/lego-effect-design.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/dark-editorial-scroll.png" alt="dark-editorial-scroll preview" width="49%"><img src="assets/dark-editorial-scroll-b.png" alt="dark-editorial-scroll second view" width="49%"><br><sub><a href="themes/dark-editorial-scroll.md">themes/dark-editorial-scroll.md</a></sub></td>
-<td width="50%"><img src="assets/aurora.png" alt="aurora preview" width="49%"><img src="assets/aurora-b.png" alt="aurora second view" width="49%"><br><sub><a href="themes/aurora.md">themes/aurora.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/graphite.png" alt="graphite preview" width="49%"><img src="assets/graphite-b.png" alt="graphite second view" width="49%"><br><sub><a href="themes/graphite.md">themes/graphite.md</a></sub></td>
-<td width="50%"><img src="assets/marine-grid.png" alt="marine-grid preview" width="49%"><img src="assets/marine-grid-b.png" alt="marine-grid second view" width="49%"><br><sub><a href="themes/marine-grid.md">themes/marine-grid.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/lumen.png" alt="lumen preview" width="49%"><img src="assets/lumen-b.png" alt="lumen second view" width="49%"><br><sub><a href="themes/lumen.md">themes/lumen.md</a></sub></td>
-<td width="50%"><img src="assets/nocturne.png" alt="nocturne preview" width="49%"><img src="assets/nocturne-b.png" alt="nocturne second view" width="49%"><br><sub><a href="themes/nocturne.md">themes/nocturne.md</a></sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="assets/pulse.png" alt="pulse preview" width="49%"><img src="assets/pulse-b.png" alt="pulse second view" width="49%"><br><sub><a href="themes/pulse.md">themes/pulse.md</a></sub></td>
 </tr>
 </table>
 
+### Landing & marketing
+
+General web pages — the left column is light-scheme themes, the right column is dark-scheme themes.
+
+<table>
+<tr><th width="50%">Light</th><th width="50%">Dark</th></tr><tr><td width="50%"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" width="49%"><img src="assets/gradient-canvas-b.png" alt="gradient-canvas second view" width="49%"><br><sub><a href="themes/gradient-canvas.md">themes/gradient-canvas.md</a></sub></td><td width="50%"><img src="assets/dark-glass.png" alt="dark-glass preview" width="49%"><img src="assets/dark-glass-b.png" alt="dark-glass second view" width="49%"><br><sub><a href="themes/dark-glass.md">themes/dark-glass.md</a></sub></td></tr><tr><td width="50%"><img src="assets/warm-workspace.png" alt="warm-workspace preview" width="49%"><img src="assets/warm-workspace-b.png" alt="warm-workspace second view" width="49%"><br><sub><a href="themes/warm-workspace.md">themes/warm-workspace.md</a></sub></td><td width="50%"><img src="assets/bold-twotone.png" alt="bold-twotone preview" width="49%"><img src="assets/bold-twotone-b.png" alt="bold-twotone second view" width="49%"><br><sub><a href="themes/bold-twotone.md">themes/bold-twotone.md</a></sub></td></tr><tr><td width="50%"><img src="assets/calm-pastel.png" alt="calm-pastel preview" width="49%"><img src="assets/calm-pastel-b.png" alt="calm-pastel second view" width="49%"><br><sub><a href="themes/calm-pastel.md">themes/calm-pastel.md</a></sub></td><td width="50%"><img src="assets/midnight.png" alt="midnight preview" width="49%"><img src="assets/midnight-b.png" alt="midnight second view" width="49%"><br><sub><a href="themes/midnight.md">themes/midnight.md</a></sub></td></tr><tr><td width="50%"><img src="assets/playful-blocks.png" alt="playful-blocks preview" width="49%"><img src="assets/playful-blocks-b.png" alt="playful-blocks second view" width="49%"><br><sub><a href="themes/playful-blocks.md">themes/playful-blocks.md</a></sub></td><td></td></tr><tr><td width="50%"><img src="assets/spec-minimal.png" alt="spec-minimal preview" width="49%"><img src="assets/spec-minimal-b.png" alt="spec-minimal second view" width="49%"><br><sub><a href="themes/spec-minimal.md">themes/spec-minimal.md</a></sub></td><td></td></tr><tr><td width="50%"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" width="49%"><img src="assets/scroll-story-blue-b.png" alt="scroll-story-blue second view" width="49%"><br><sub><a href="themes/scroll-story-blue.md">themes/scroll-story-blue.md</a></sub></td><td></td></tr></table>
+
 > [!NOTE]
-> Previews are screenshots rendered at 1280px — left: hero, right: a section below the fold.
+> Previews are screenshots rendered at 1280px. Dashboard cells pair the light and dark scheme of one theme; all other cells pair the hero with a section below the fold.
 
 ## Usage
 

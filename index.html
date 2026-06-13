@@ -202,6 +202,14 @@
     font-size: 16px;
   }
 
+
+  /* ---------- category headings ---------- */
+  .cat-head { margin: 64px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text); }
+  .cat-head:first-of-type { margin-top: 48px; }
+  .cat-sub { margin: 6px 0 0; font-size: 14px; color: var(--text-soft); }
+  .cat-tag { margin: 28px 0 0; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-soft); }
+  .cat-head + .cat-sub + .grid, .cat-tag + .grid { margin-top: 20px; }
+
   /* ---------- themes gallery ---------- */
   .themes { border-top: 1px solid var(--hairline); }
   .grid {
@@ -498,257 +506,258 @@
         <h2>Previews</h2>
       </div>
 
-      <div class="grid">
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#6C5CE7"></span><span style="background:#FF7AC6"></span><span style="background:#00D4FF"></span><span style="background:#0A2540"></span></div><div class="thumb"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/gradient-canvas.md" target="_blank" rel="noopener">gradient-canvas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Light, one animated gradient moment, diagonal cuts.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#FFFFFF"></span><span style="background:#0070F3"></span><span style="background:#50E3C2"></span></div><div class="thumb"><img src="assets/mono-grid.png" alt="mono-grid preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-grid.md" target="_blank" rel="noopener">mono-grid<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Black/white geometry, exposed line grid, mono artifacts.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F6F3"></span><span style="background:#FBF3DB"></span><span style="background:#2383E2"></span></div><div class="thumb"><img src="assets/warm-workspace.png" alt="warm-workspace preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/warm-workspace.md" target="_blank" rel="noopener">warm-workspace<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Warm white, cards and toggles, one calm accent.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#3182F6"></span><span style="background:#F2F4F6"></span><span style="background:#191F28"></span><span style="background:#F04452"></span></div><div class="thumb"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scroll-story-blue.md" target="_blank" rel="noopener">scroll-story-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Mobile-first full-screen scroll narrative, single blue.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FBFAF9"></span><span style="background:#EEEDFB"></span><span style="background:#5266EB"></span><span style="background:#14151A"></span></div><div class="thumb"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/editorial-hairline.md" target="_blank" rel="noopener">editorial-hairline<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Warm off-white, hairline rules, serif-italic accents.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#CDE82A"></span><span style="background:#1C3424"></span><span style="background:#FFFFFF"></span><span style="background:#0E0F0C"></span></div><div class="thumb"><img src="assets/bold-twotone.png" alt="bold-twotone preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/bold-twotone.md" target="_blank" rel="noopener">bold-twotone<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">One deep + one bright tone, condensed display type.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFEF2"></span><span style="background:#F6F5E8"></span><span style="background:#D8D7CC"></span><span style="background:#252525"></span></div><div class="thumb"><img src="assets/quiet-paper.png" alt="quiet-paper preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/quiet-paper.md" target="_blank" rel="noopener">quiet-paper<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Paper tones, long-form copy, radius 0, zero urgency.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F5F5F5"></span><span style="background:#FF7500"></span><span style="background:#101820"></span></div><div class="thumb"><img src="assets/spec-minimal.png" alt="spec-minimal preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/spec-minimal.md" target="_blank" rel="noopener">spec-minimal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Monochrome, oversized spec numerals, uppercase labels.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#ECECEC"></span><span style="background:#8E8E8E"></span><span style="background:#000000"></span></div><div class="thumb"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-editorial-shop.md" target="_blank" rel="noopener">mono-editorial-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">B/W editorial commerce, mixed Latin/Korean type.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#04070E"></span><span style="background:#0D1525"></span><span style="background:#9DC8FF"></span><span style="background:#CAEEFF"></span></div><div class="thumb"><img src="assets/midnight.png" alt="midnight preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/midnight.md" target="_blank" rel="noopener">midnight<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Dark navy engineering UI, single ice-blue accent, border depth.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#004D15"></span><span style="background:#00AA2B"></span><span style="background:#00FF41"></span></div><div class="thumb"><img src="assets/phosphor.png" alt="phosphor preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/phosphor.md" target="_blank" rel="noopener">phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Green CRT terminal, bitmap type, working TTY.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#08000F"></span><span style="background:#3C096C"></span><span style="background:#9D4EDD"></span><span style="background:#C77DFF"></span></div><div class="thumb"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/violet-phosphor.md" target="_blank" rel="noopener">violet-phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Violet CRT terminal variant, live monitor and shell.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#101013"></span><span style="background:#7C3AED"></span><span style="background:#EC4899"></span><span style="background:#3B82F6"></span></div><div class="thumb"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/grainy-blur.md" target="_blank" rel="noopener">grainy-blur<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Dark charcoal canvas, blurred color light-curtains, heavy film grain.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#F9F4F2"></span><span style="background:#F3DDE2"></span><span style="background:#D9E4EF"></span><span style="background:#2D52CC"></span></div><div class="thumb"><img src="assets/calm-pastel.png" alt="calm-pastel preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/calm-pastel.md" target="_blank" rel="noopener">calm-pastel<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Warm paper canvas, super-rounded pastel surfaces, breathing motion.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#07080A"></span><span style="background:#181A1A"></span><span style="background:#58AEFF"></span><span style="background:#7B5BD6"></span></div><div class="thumb"><img src="assets/dark-glass.png" alt="dark-glass preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-glass.md" target="_blank" rel="noopener">dark-glass<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Near-black frosted glass, hairline highlights, single violet glow.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F4ED"></span><span style="background:#1E7F3C"></span><span style="background:#4477AA"></span></div><div class="thumb"><img src="assets/scrolly-data.png" alt="scrolly-data preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scrolly-data.md" target="_blank" rel="noopener">scrolly-data<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Light scroll-driven data essay, serif editorial voice, live charts.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FBF9F9"></span><span style="background:#14141C"></span><span style="background:#4E79C4"></span><span style="background:#3E8E7E"></span></div><div class="thumb"><img src="assets/lab-console.png" alt="lab-console preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/lab-console.md" target="_blank" rel="noopener">lab-console<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Light engineering console, dense tables, run metrics.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#FFFFFF"></span><span style="background:#FF5C00"></span><span style="background:#FCB900"></span></div><div class="thumb"><img src="assets/brutalist-pop.png" alt="brutalist-pop preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/brutalist-pop.md" target="_blank" rel="noopener">brutalist-pop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Black poster-size grotesque, single orange pop, marquee bands.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#1D1F23"></span><span style="background:#4338E3"></span><span style="background:#E04A2B"></span></div><div class="thumb"><img src="assets/kinetic-type.png" alt="kinetic-type preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/kinetic-type.md" target="_blank" rel="noopener">kinetic-type<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">White canvas, oversized grotesque + serif italic, scroll-driven type.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#332354"></span><span style="background:#2BB59A"></span><span style="background:#F2616B"></span></div><div class="thumb"><img src="assets/playful-blocks.png" alt="playful-blocks preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/playful-blocks.md" target="_blank" rel="noopener">playful-blocks<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Saturated color chips, chunky 3D-lip buttons, springy motion.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F7F7"></span><span style="background:#222222"></span><span style="background:#E8474D"></span></div><div class="thumb"><img src="assets/dense-grid-shop.png" alt="dense-grid-shop preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dense-grid-shop.md" target="_blank" rel="noopener">dense-grid-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">High-density product grid, b/w chrome, one warm red for prices.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F7F7"></span><span style="background:#1428A0"></span><span style="background:#000000"></span></div><div class="thumb"><img src="assets/tech-blue.png" alt="tech-blue preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/tech-blue.md" target="_blank" rel="noopener">tech-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Sky-tint campaign commerce UI, single cobalt accent.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#EDEDEF"></span><span style="background:#FFFFFF"></span><span style="background:#111113"></span><span style="background:#E2603A"></span></div><div class="thumb"><img src="assets/orange-offset-mono.png" alt="orange-offset-mono preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/orange-offset-mono.md" target="_blank" rel="noopener">orange-offset-mono<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Offset black headline blocks on gray, mono labels, stair motif.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#0D0D11"></span><span style="background:#E8623C"></span><span style="background:#9A6BE0"></span><span style="background:#5FCE8B"></span></div><div class="thumb"><img src="assets/lego-effect-design.png" alt="lego-effect-design preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/lego-effect-design.md" target="_blank" rel="noopener">lego-effect-design<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Studded brick components, hard shadows, toy-grid baseplate.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
-          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#0F0F0F"></span><span style="background:#262626"></span><span style="background:#F2F2F0"></span><span style="background:#D97A2B"></span></div><div class="thumb"><img src="assets/dark-editorial-scroll.png" alt="dark-editorial-scroll preview" loading="lazy" /></div></div>
-          <div class="body">
-            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-editorial-scroll.md" target="_blank" rel="noopener">dark-editorial-scroll<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
-            <p class="desc">Near-black editorial scroll, sticky title column, warm gradient imagery.</p>
-          </div>
-        </article>
-
-        <article class="card enter">
+      <h3 class="cat-head">Dashboards & consoles</h3>
+<p class="cat-sub">Data, metrics and monitoring UIs.</p>
+<div class="grid">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#F7F8FC"></span><span style="background:#191B2B"></span><span style="background:#6929C4"></span><span style="background:#1192E8"></span></div><div class="thumb"><img src="assets/aurora.png" alt="aurora preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/aurora.md" target="_blank" rel="noopener">aurora<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Light analytics dashboard, dark sidebar, purple accent, donut/bar viz.</p>
           </div>
         </article>
-
-        <article class="card enter">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#161618"></span><span style="background:#26262A"></span><span style="background:#58A6FF"></span><span style="background:#3FB950"></span></div><div class="thumb"><img src="assets/graphite.png" alt="graphite preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/graphite.md" target="_blank" rel="noopener">graphite<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Matte charcoal industrial console, color only in data, ink-in reveal.</p>
           </div>
         </article>
-
-        <article class="card enter">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#F4F4F4"></span><span style="background:#003D8F"></span><span style="background:#0F62FE"></span><span style="background:#061224"></span></div><div class="thumb"><img src="assets/marine-grid.png" alt="marine-grid preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/marine-grid.md" target="_blank" rel="noopener">marine-grid<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Square-corner corporate sensor board, deep marine blue, hairline panels.</p>
           </div>
         </article>
-
-        <article class="card enter">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#0B1220"></span><span style="background:#111A2C"></span><span style="background:#35D0C5"></span><span style="background:#7AA2F7"></span></div><div class="thumb"><img src="assets/lumen.png" alt="lumen preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/lumen.md" target="_blank" rel="noopener">lumen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Navy instrument panel, radial gauges, uniform-ramp heatmaps, mono readouts.</p>
           </div>
         </article>
-
-        <article class="card enter">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#242933"></span><span style="background:#2E3440"></span><span style="background:#88C0D0"></span><span style="background:#BF616A"></span></div><div class="thumb"><img src="assets/nocturne.png" alt="nocturne preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/nocturne.md" target="_blank" rel="noopener">nocturne<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Dense slate night-ops board, frost accent, packed 12-col panels.</p>
           </div>
         </article>
-
-        <article class="card enter">
+<article class="card enter">
           <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#F2F4F6"></span><span style="background:#3182F6"></span><span style="background:#E69F00"></span><span style="background:#101418"></span></div><div class="thumb"><img src="assets/pulse.png" alt="pulse preview" loading="lazy" /></div></div>
           <div class="body">
             <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/pulse.md" target="_blank" rel="noopener">pulse<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
             <p class="desc">Consumer-soft monitor, one blue, springy count-ups, large rounded cards.</p>
           </div>
         </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FBF9F9"></span><span style="background:#14141C"></span><span style="background:#4E79C4"></span><span style="background:#3E8E7E"></span></div><div class="thumb"><img src="assets/lab-console.png" alt="lab-console preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/lab-console.md" target="_blank" rel="noopener">lab-console<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Light engineering console, dense tables, run metrics.</p>
+          </div>
+        </article>
+</div>
 
-      </div>
+<h3 class="cat-head">Research & project pages</h3>
+<p class="cat-sub">Paper landings, case studies and data stories.</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#0F0F0F"></span><span style="background:#262626"></span><span style="background:#F2F2F0"></span><span style="background:#D97A2B"></span></div><div class="thumb"><img src="assets/dark-editorial-scroll.png" alt="dark-editorial-scroll preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-editorial-scroll.md" target="_blank" rel="noopener">dark-editorial-scroll<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Near-black editorial scroll, sticky title column, warm gradient imagery.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F4ED"></span><span style="background:#1E7F3C"></span><span style="background:#4477AA"></span></div><div class="thumb"><img src="assets/scrolly-data.png" alt="scrolly-data preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scrolly-data.md" target="_blank" rel="noopener">scrolly-data<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Light scroll-driven data essay, serif editorial voice, live charts.</p>
+          </div>
+        </article>
+</div>
+
+<h3 class="cat-head">Commerce & catalog</h3>
+<p class="cat-sub">Product grids, storefronts and campaigns.</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F7F7"></span><span style="background:#222222"></span><span style="background:#E8474D"></span></div><div class="thumb"><img src="assets/dense-grid-shop.png" alt="dense-grid-shop preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dense-grid-shop.md" target="_blank" rel="noopener">dense-grid-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">High-density product grid, b/w chrome, one warm red for prices.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#ECECEC"></span><span style="background:#8E8E8E"></span><span style="background:#000000"></span></div><div class="thumb"><img src="assets/mono-editorial-shop.png" alt="mono-editorial-shop preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-editorial-shop.md" target="_blank" rel="noopener">mono-editorial-shop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">B/W editorial commerce, mixed Latin/Korean type.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F7F7"></span><span style="background:#1428A0"></span><span style="background:#000000"></span></div><div class="thumb"><img src="assets/tech-blue.png" alt="tech-blue preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/tech-blue.md" target="_blank" rel="noopener">tech-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Sky-tint campaign commerce UI, single cobalt accent.</p>
+          </div>
+        </article>
+</div>
+
+<h3 class="cat-head">Portfolio & editorial</h3>
+<p class="cat-sub">Expressive type, galleries and reading.</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#1D1F23"></span><span style="background:#4338E3"></span><span style="background:#E04A2B"></span></div><div class="thumb"><img src="assets/kinetic-type.png" alt="kinetic-type preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/kinetic-type.md" target="_blank" rel="noopener">kinetic-type<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">White canvas, oversized grotesque + serif italic, scroll-driven type.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#FFFFFF"></span><span style="background:#0070F3"></span><span style="background:#50E3C2"></span></div><div class="thumb"><img src="assets/mono-grid.png" alt="mono-grid preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/mono-grid.md" target="_blank" rel="noopener">mono-grid<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Black/white geometry, exposed line grid, mono artifacts.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#EDEDEF"></span><span style="background:#FFFFFF"></span><span style="background:#111113"></span><span style="background:#E2603A"></span></div><div class="thumb"><img src="assets/orange-offset-mono.png" alt="orange-offset-mono preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/orange-offset-mono.md" target="_blank" rel="noopener">orange-offset-mono<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Offset black headline blocks on gray, mono labels, stair motif.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FBFAF9"></span><span style="background:#EEEDFB"></span><span style="background:#5266EB"></span><span style="background:#14151A"></span></div><div class="thumb"><img src="assets/editorial-hairline.png" alt="editorial-hairline preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/editorial-hairline.md" target="_blank" rel="noopener">editorial-hairline<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Warm off-white, hairline rules, serif-italic accents.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#FFFFFF"></span><span style="background:#FF5C00"></span><span style="background:#FCB900"></span></div><div class="thumb"><img src="assets/brutalist-pop.png" alt="brutalist-pop preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/brutalist-pop.md" target="_blank" rel="noopener">brutalist-pop<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Black poster-size grotesque, single orange pop, marquee bands.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFEF2"></span><span style="background:#F6F5E8"></span><span style="background:#D8D7CC"></span><span style="background:#252525"></span></div><div class="thumb"><img src="assets/quiet-paper.png" alt="quiet-paper preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/quiet-paper.md" target="_blank" rel="noopener">quiet-paper<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Paper tones, long-form copy, radius 0, zero urgency.</p>
+          </div>
+        </article>
+</div>
+
+<h3 class="cat-head">Terminal & experimental</h3>
+<p class="cat-sub">CRT terminals and textured novelty surfaces.</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#000000"></span><span style="background:#004D15"></span><span style="background:#00AA2B"></span><span style="background:#00FF41"></span></div><div class="thumb"><img src="assets/phosphor.png" alt="phosphor preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/phosphor.md" target="_blank" rel="noopener">phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Green CRT terminal, bitmap type, working TTY.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#08000F"></span><span style="background:#3C096C"></span><span style="background:#9D4EDD"></span><span style="background:#C77DFF"></span></div><div class="thumb"><img src="assets/violet-phosphor.png" alt="violet-phosphor preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/violet-phosphor.md" target="_blank" rel="noopener">violet-phosphor<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Violet CRT terminal variant, live monitor and shell.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#101013"></span><span style="background:#7C3AED"></span><span style="background:#EC4899"></span><span style="background:#3B82F6"></span></div><div class="thumb"><img src="assets/grainy-blur1.png" alt="grainy-blur preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/grainy-blur.md" target="_blank" rel="noopener">grainy-blur<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Dark charcoal canvas, blurred color light-curtains, heavy film grain.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#0D0D11"></span><span style="background:#E8623C"></span><span style="background:#9A6BE0"></span><span style="background:#5FCE8B"></span></div><div class="thumb"><img src="assets/lego-effect-design.png" alt="lego-effect-design preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/lego-effect-design.md" target="_blank" rel="noopener">lego-effect-design<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Studded brick components, hard shadows, toy-grid baseplate.</p>
+          </div>
+        </article>
+</div>
+
+<h3 class="cat-head">Landing &amp; marketing</h3>
+<p class="cat-sub">General web pages, split by default colour scheme.</p>
+
+<p class="cat-tag">Light</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#6C5CE7"></span><span style="background:#FF7AC6"></span><span style="background:#00D4FF"></span><span style="background:#0A2540"></span></div><div class="thumb"><img src="assets/gradient-canvas.png" alt="gradient-canvas preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/gradient-canvas.md" target="_blank" rel="noopener">gradient-canvas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Light, one animated gradient moment, diagonal cuts.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F7F6F3"></span><span style="background:#FBF3DB"></span><span style="background:#2383E2"></span></div><div class="thumb"><img src="assets/warm-workspace.png" alt="warm-workspace preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/warm-workspace.md" target="_blank" rel="noopener">warm-workspace<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Warm white, cards and toggles, one calm accent.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#F9F4F2"></span><span style="background:#F3DDE2"></span><span style="background:#D9E4EF"></span><span style="background:#2D52CC"></span></div><div class="thumb"><img src="assets/calm-pastel.png" alt="calm-pastel preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/calm-pastel.md" target="_blank" rel="noopener">calm-pastel<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Warm paper canvas, super-rounded pastel surfaces, breathing motion.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#332354"></span><span style="background:#2BB59A"></span><span style="background:#F2616B"></span></div><div class="thumb"><img src="assets/playful-blocks.png" alt="playful-blocks preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/playful-blocks.md" target="_blank" rel="noopener">playful-blocks<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Saturated color chips, chunky 3D-lip buttons, springy motion.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#F5F5F5"></span><span style="background:#FF7500"></span><span style="background:#101820"></span></div><div class="thumb"><img src="assets/spec-minimal.png" alt="spec-minimal preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/spec-minimal.md" target="_blank" rel="noopener">spec-minimal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Monochrome, oversized spec numerals, uppercase labels.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#3182F6"></span><span style="background:#F2F4F6"></span><span style="background:#191F28"></span><span style="background:#F04452"></span></div><div class="thumb"><img src="assets/scroll-story-blue.png" alt="scroll-story-blue preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/scroll-story-blue.md" target="_blank" rel="noopener">scroll-story-blue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Mobile-first full-screen scroll narrative, single blue.</p>
+          </div>
+        </article>
+</div>
+
+<p class="cat-tag">Dark</p>
+<div class="grid">
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#07080A"></span><span style="background:#181A1A"></span><span style="background:#58AEFF"></span><span style="background:#7B5BD6"></span></div><div class="thumb"><img src="assets/dark-glass.png" alt="dark-glass preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/dark-glass.md" target="_blank" rel="noopener">dark-glass<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Near-black frosted glass, hairline highlights, single violet glow.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#CDE82A"></span><span style="background:#1C3424"></span><span style="background:#FFFFFF"></span><span style="background:#0E0F0C"></span></div><div class="thumb"><img src="assets/bold-twotone.png" alt="bold-twotone preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/bold-twotone.md" target="_blank" rel="noopener">bold-twotone<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">One deep + one bright tone, condensed display type.</p>
+          </div>
+        </article>
+<article class="card enter">
+          <div class="preview"><div class="chips" aria-hidden="true"><span style="background:#04070E"></span><span style="background:#0D1525"></span><span style="background:#9DC8FF"></span><span style="background:#CAEEFF"></span></div><div class="thumb"><img src="assets/midnight.png" alt="midnight preview" loading="lazy" /></div></div>
+          <div class="body">
+            <h3><a href="https://github.com/NamYoonJi/theme-park-md/blob/main/themes/midnight.md" target="_blank" rel="noopener">midnight<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></h3>
+            <p class="desc">Dark navy engineering UI, single ice-blue accent, border depth.</p>
+          </div>
+        </article>
+</div>
     </div>
   </section>
 
